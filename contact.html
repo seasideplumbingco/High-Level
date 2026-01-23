@@ -3,157 +3,193 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seaside Plumbing & Mechanical | Contact</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Contact | Seaside Plumbing & Mechanical</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Page-only styling to restore clean form layout -->
+  <style>
+    .contact-wrap{
+      margin-top: 34px;
+      max-width: 980px;
+      margin-inline: auto;
+    }
+
+    .contact-card{
+      background: rgba(14,26,58,.58);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 22px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.24);
+      padding: 34px;
+    }
+
+    .contact-grid{
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 28px;
+      align-items: start;
+      margin-top: 24px;
+    }
+
+    .form-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .span-2{ grid-column: 1 / -1; }
+
+    .form-actions{
+      margin-top: 14px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .help-text{
+      margin-top: 10px;
+      color: rgba(255,255,255,.70);
+      font-size: 13px;
+    }
+
+    .info{
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .info h3{
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .info ul{
+      margin: 0;
+      padding-left: 18px;
+      color: rgba(255,255,255,.85);
+      display: grid;
+      gap: 10px;
+    }
+
+    .info a{ text-decoration: underline; text-underline-offset: 3px; }
+
+    @media (max-width: 900px){
+      .contact-grid{ grid-template-columns: 1fr; }
+      .form-grid{ grid-template-columns: 1fr; }
+      .span-2{ grid-column: auto; }
+    }
+  </style>
 </head>
+
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">
-      <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-      <div>
-        <div class="brand-name">Seaside Plumbing<br>& Mechanical</div>
-        <div class="brand-sub">Residential & Commercial</div>
-      </div>
-    </a>
-
-    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
-
-  <nav id="nav" class="nav" aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="service-areas.html">Service Areas</a>
-  <a href="faq.html">FAQ</a>
-  <a href="photos.html">Photos</a>
-  <a href="about.html">About Us</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-</header>
-
-<main id="main">
-  <section class="section">
-    <div class="container">
-      <h1 class="section-title">Contact Us</h1>
-      <p class="section-sub">Tell us what’s going on — we’ll get you scheduled ASAP.</p>
-
-      <div class="grid-2" style="margin-top:40px;">
-        <div class="card pad">
-          <h2 class="h2" style="font-size:34px;">Request Service</h2>
-          <p class="p">This form is a layout. Hook it to Formspree / Netlify Forms / your backend when ready.</p>
-
-          <form class="form">
-
-  <input
-    class="input"
-    type="text"
-    name="name"
-    placeholder="Full Name"
-    required
-  >
-
-  <input
-    class="input"
-    type="email"
-    name="email"
-    placeholder="Email Address"
-    required
-  >
-
-  <input
-    class="input"
-    type="text"
-    name="company"
-    placeholder="Company Name (if applicable)"
-  >
-
-  <!-- REQUIRED REQUEST TYPE -->
-  <select
-    class="input"
-    name="request_type"
-    required
-  >
-    <option value="" disabled selected>
-      Request Type (Required)
-    </option>
-    <option value="Residential Service">
-      Residential Service
-    </option>
-    <option value="Commercial Bid">
-      Commercial Bid
-    </option>
-  </select>
-
-  <input
-    class="input"
-    type="tel"
-    name="phone"
-    placeholder="Phone Number"
-  >
-
-  <input
-    class="input"
-    type="text"
-    name="subject"
-    placeholder="Subject"
-  >
-
-  <textarea
-    name="message"
-    placeholder="Please include the service location, desired timeline, and any other details that will help us prepare your estimate."
-    required
-  ></textarea>
-
-  <button class="btn btn-primary" type="submit">
-    Submit Request →
-  </button>
-
-  <div class="small">
-    We typically respond within one business day. For urgent issues, please call directly.
-  </div>
-
-</form>
-
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
+        <div>
+          <div class="brand-name">Seaside Plumbing<br>&amp; Mechanical</div>
+          <div class="brand-sub">Residential &amp; Commercial</div>
         </div>
+      </a>
 
-        <div class="card pad">
-          <h2 class="h2" style="font-size:34px;">Business Info</h2>
-          <ul class="bullets" style="margin-top:18px;">
-            <li><span class="dot"></span><strong>Phone:</strong>&nbsp;960-760-1009</li>
-            <li><span class="dot"></span><strong>Email:</strong>&nbsp;info@seasideplumbingco.com</li>
-            <li><span class="dot"></span><strong>Hours:</strong>&nbsp;24/7 (emergency calls)</li>
-          </ul>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="faq.html">FAQ</a>
+        <a href="photos.html">Photos</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-          <div class="cta-row" style="justify-content:flex-start;">
-            <a class="btn btn-secondary" href="services.html">View Services</a>
-            <a class="btn btn-primary" href="service-areas.html">Service Areas →</a>
-          </div>
+  <!-- MAIN -->
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Contact Us</h1>
+        <p class="section-sub">Tell us what’s going on — we’ll get you scheduled ASAP.</p>
 
-          <!-- Optional map embed -->
-          <div class="card" style="margin-top:20px; overflow:hidden;">
-            <div style="padding:14px; color:var(--muted2);">
-              Map embed placeholder (Google Maps iframe).
+        <div class="contact-wrap">
+          <div class="contact-card">
+
+            <div class="contact-grid">
+
+              <!-- FORM -->
+              <div>
+                <h2 class="h2" style="margin:0;">Request Service</h2>
+                <p class="p">Fill out the form below and we’ll follow up as soon as possible.</p>
+
+                <form class="form" id="contact-form" action="#" method="post">
+                  <div class="form-grid">
+
+                    <input class="input" name="name" type="text" placeholder="Full Name" required>
+
+                    <input class="input" name="email" type="email" placeholder="Email Address" required>
+
+                    <input class="input" name="company" type="text" placeholder="Company Name (if applicable)">
+
+                    <select class="input" name="request_type" required>
+                      <option value="" selected disabled>Request Type (Required)</option>
+                      <option value="Residential Quote">Residential Quote</option>
+                      <option value="Commercial Bid">Commercial Bid</option>
+                    </select>
+
+                    <input class="input" name="phone" type="tel" placeholder="Phone Number">
+
+                    <input class="input" name="subject" type="text" placeholder="Subject">
+
+                    <textarea class="input span-2" name="message" placeholder="Message (Please include your location, timeline, and any other details needed)" required></textarea>
+
+                  </div>
+
+                  <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">Submit Request →</button>
+                  </div>
+
+                  <div class="help-text">
+                    We typically respond within one business day. For urgent issues, please call directly.
+                  </div>
+                </form>
+              </div>
+
+              <!-- BUSINESS INFO -->
+              <aside class="info">
+                <h3>Business Info</h3>
+                <ul>
+                  <li><strong>Phone:</strong> <a href="tel:19607601009">960-760-1009</a></li>
+                  <li><strong>Email:</strong> <a href="mailto:info@seasideplumbingco.com">info@seasideplumbingco.com</a></li>
+                  <li><strong>Hours:</strong> 24/7 (emergency calls)</li>
+                </ul>
+
+                <div class="cta-row" style="justify-content:flex-start; margin-top:16px;">
+                  <a class="btn btn-secondary" style="min-width:0; padding:12px 16px;" href="services.html">View Services</a>
+                  <a class="btn btn-primary" style="min-width:0; padding:12px 16px;" href="service-areas.html">Service Areas →</a>
+                </div>
+              </aside>
+
             </div>
+
           </div>
-
         </div>
+
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-    <div>© 2026 Seaside Plumbing & Mechanical — All rights reserved.</div>
-    <div class="fine">
-      Seaside Plumbing & Mechanical | 960-760-1009 | jonathanb@seasideplumbingco.com | Hours: 24/7 (emergency calls)
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
+      <div class="fine">© 2026 Seaside Plumbing &amp; Mechanical · All rights reserved.</div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
