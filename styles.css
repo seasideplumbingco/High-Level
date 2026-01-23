@@ -539,7 +539,7 @@ select.input{
   display:grid;
   grid-template-columns: 1.05fr .95fr;
   gap: 48px;
-  align-items: start;
+  align-items: stretch; /* allow bottom alignment */
 }
 .about-grid h1{
   margin: 0 0 16px;
@@ -675,4 +675,8 @@ select.input{
 @media (max-width: 980px){
   .services-grid{ grid-template-columns: 1fr; }
   .services-photo img{ aspect-ratio: 4 / 3; }
+}
+
+.about-photo{
+  align-self: end; /* moves image to bottom right */
 }
