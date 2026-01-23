@@ -45,14 +45,77 @@
           <p class="p">This form is a layout. Hook it to Formspree / Netlify Forms / your backend when ready.</p>
 
           <form class="form">
-            <input class="input" type="text" name="name" placeholder="Full Name" required>
-            <input class="input" type="tel" name="phone" placeholder="Phone Number" required>
-            <input class="input" type="email" name="email" placeholder="Email" required>
-            <input class="input" type="text" name="address" placeholder="Service Address (optional)">
-            <textarea name="message" placeholder="How can we help? (Leak, water heater, remodel, etc.)" required></textarea>
-            <button class="btn btn-primary" type="submit">Send Request →</button>
-            <div class="small">Prefer to call? Dial <strong>960-760-1009</strong>.</div>
-          </form>
+
+  <input
+    class="input"
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    required
+  >
+
+  <input
+    class="input"
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+  >
+
+  <input
+    class="input"
+    type="text"
+    name="company"
+    placeholder="Company Name (if applicable)"
+  >
+
+  <!-- REQUIRED REQUEST TYPE -->
+  <select
+    class="input"
+    name="request_type"
+    required
+  >
+    <option value="" disabled selected>
+      Request Type (Required)
+    </option>
+    <option value="Residential Service">
+      Residential Service
+    </option>
+    <option value="Commercial Bid">
+      Commercial Bid
+    </option>
+  </select>
+
+  <input
+    class="input"
+    type="tel"
+    name="phone"
+    placeholder="Phone Number"
+  >
+
+  <input
+    class="input"
+    type="text"
+    name="subject"
+    placeholder="Subject"
+  >
+
+  <textarea
+    name="message"
+    placeholder="Please include the service location, desired timeline, and any other details that will help us prepare your estimate."
+    required
+  ></textarea>
+
+  <button class="btn btn-primary" type="submit">
+    Submit Request →
+  </button>
+
+  <div class="small">
+    We typically respond within one business day. For urgent issues, please call directly.
+  </div>
+
+</form>
+
         </div>
 
         <div class="card pad">
