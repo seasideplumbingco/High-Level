@@ -520,3 +520,14 @@ textarea{min-height:140px; resize:vertical}
   .services-layout{ grid-template-columns: 1fr; }
   .services-panel .panel{ padding: 22px; }
 }
+select.input{
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #fff 50%),
+    linear-gradient(135deg, #fff 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(50% - 4px),
+    calc(100% - 14px) calc(50% - 4px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
