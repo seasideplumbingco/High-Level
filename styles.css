@@ -65,8 +65,10 @@ img{max-width:100%; display:block}
   display:flex; align-items:center; gap:12px;
 }
 .brand img{
-  width:72px; height:72px;
+  width:120px;
+  height:auto;
   object-fit:contain;
+}
 }
 .brand .brand-name{
   font-weight:800;
