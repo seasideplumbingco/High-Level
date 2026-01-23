@@ -6,18 +6,78 @@
   <title>FAQ | Seaside Plumbing & Mechanical</title>
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Page-only styles (bubble FAQ look) -->
+  <style>
+    .faq-wrap{
+      margin-top: 34px;
+      display: grid;
+      gap: 14px;
+      max-width: 920px;
+      margin-inline: auto;
+    }
+
+    .faq-item{
+      background: rgba(14,26,58,.55);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.22);
+      overflow: hidden;
+    }
+
+    .faq-q{
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 18px;
+      font-weight: 900;
+      color: rgba(255,255,255,.92);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      user-select: none;
+    }
+
+    /* hide default marker */
+    .faq-q::-webkit-details-marker{ display:none; }
+
+    /* custom chevron */
+    .faq-q::after{
+      content: "▾";
+      font-size: 18px;
+      opacity: .85;
+      transition: transform .18s ease;
+    }
+    details[open] .faq-q::after{
+      transform: rotate(180deg);
+    }
+
+    .faq-a{
+      padding: 0 18px 18px;
+      color: rgba(255,255,255,.75);
+      line-height: 1.65;
+    }
+
+    .faq-a p{ margin: 0; }
+
+    /* subtle hover */
+    .faq-item:hover{
+      border-color: rgba(246,165,0,.25);
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- HEADER -->
-  <header class="header">
+  <header class="site-header">
     <div class="container header-inner">
 
       <a class="brand" href="index.html">
         <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
         <div>
-          <strong>Seaside Plumbing<br>& Mechanical</strong>
-          <span>Residential & Commercial</span>
+          <div class="brand-name">Seaside Plumbing<br>&amp; Mechanical</div>
+          <div class="brand-sub">Residential &amp; Commercial</div>
         </div>
       </a>
 
@@ -36,86 +96,74 @@
 
   <!-- MAIN -->
   <main id="main">
-
     <section class="section">
       <div class="container">
 
         <h1 class="section-title">Frequently Asked Questions</h1>
-        <p class="section-sub">
-          Clear answers to common questions about our plumbing services.
-        </p>
+        <p class="section-sub">Clear answers to common questions about our plumbing services.</p>
 
-        <!-- FAQ ITEMS -->
+        <div class="faq-wrap">
 
-        <details class="faq-item">
-          <summary class="faq-q">What areas do you serve?</summary>
-          <div class="faq-a">
-            <p>We serve coastal North Carolina and surrounding areas. Visit our <a href="service-areas.html">Service Areas</a> page for details.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-q">What areas do you serve?</summary>
+            <div class="faq-a">
+              <p>We serve coastal North Carolina and surrounding areas. Visit our <a href="service-areas.html">Service Areas</a> page for details.</p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary class="faq-q">Do you handle commercial new construction projects?</summary>
-          <div class="faq-a">
-            <p>Yes. We support commercial new construction and facility plumbing needs. Contact us with your project scope, location, and timeline.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-q">Do you handle commercial new construction projects?</summary>
+            <div class="faq-a">
+              <p>Yes. We support commercial new construction and facility plumbing needs. Contact us with your project scope, location, and timeline.</p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary class="faq-q">Do you offer residential plumbing services?</summary>
-          <div class="faq-a">
-            <p>Yes. We provide repairs, replacements, installations, and ongoing maintenance for residential plumbing systems.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-q">Do you offer residential plumbing services?</summary>
+            <div class="faq-a">
+              <p>Yes. We provide repairs, replacements, installations, and maintenance for residential plumbing systems.</p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary class="faq-q">Are you licensed and insured?</summary>
-          <div class="faq-a">
-            <p>Yes. We operate under a properly licensed business and carry insurance for covered work.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-q">Are you licensed and insured?</summary>
+            <div class="faq-a">
+              <p>Yes. We operate under a properly licensed business and carry insurance for covered work.</p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary class="faq-q">How do I request a commercial bid or residential quote?</summary>
-          <div class="faq-a">
-            <p>Use our <a href="contact.html">contact form</a> or call us with your scope, location, and timeline. We’ll follow up during business hours.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-q">How do I request a commercial bid or residential quote?</summary>
+            <div class="faq-a">
+              <p>Use our <a href="contact.html">contact form</a> or call us with your scope, location, and timeline. We’ll follow up during business hours.</p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary class="faq-q">Do you provide emergency plumbing services?</summary>
-          <div class="faq-a">
-            <p>Please contact us as soon as possible and we’ll do our best to assist based on availability.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-q">Do you provide emergency plumbing services?</summary>
+            <div class="faq-a">
+              <p>Please contact us as soon as possible and we’ll do our best to assist based on availability.</p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary class="faq-q">Do you offer free estimates?</summary>
-          <div class="faq-a">
-            <p>Yes. We provide free estimates for many projects. Share your details and we’ll advise on next steps.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-q">Do you offer free estimates?</summary>
+            <div class="faq-a">
+              <p>Yes. We provide free estimates for many projects. Share your details and we’ll advise on next steps.</p>
+            </div>
+          </details>
 
-        <!-- CTA -->
-        <div class="cta-row" style="justify-content:center; margin-top:40px;">
-          <a class="btn btn-primary" href="contact.html#contact-form">
-            Request an Estimate →
-          </a>
         </div>
 
       </div>
     </section>
-
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-      <p>
-        © 2026 Seaside Plumbing & Mechanical · All rights reserved<br>
-        Serving Coastal North Carolina
-      </p>
+      <div class="fine">© 2026 Seaside Plumbing &amp; Mechanical · All rights reserved.</div>
     </div>
   </footer>
 
