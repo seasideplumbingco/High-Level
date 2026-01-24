@@ -14,7 +14,6 @@
             background-color: #020617;
         }
 
-        /* ADDED: matches your previous hero approach */
         .bg-hero {
             background-image: linear-gradient(rgba(2, 6, 23, 0.80), rgba(2, 6, 23, 0.80)), url('assets/hero-under-sink.jpg');
             background-size: cover;
@@ -29,64 +28,43 @@
  </head>
 
  <body class="text-white">
-  <!-- Header -->
-  <header class="bg-[#020617] py-4 px-8 md:px-16 flex justify-between items-center">
-   <div class="flex items-center">
-    <img alt="Seaside Plumbing &amp; Mechanical Logo featuring a sunset, waves, and a wrench" class="h-24" src=assets/plumber-9"/>
-   </div>
-    <!-- Navigation -->
+
+  <!-- Navigation (FIXED to match your correct template) -->
   <nav class="flex items-center justify-between px-12 py-4 bg-[#020617]">
    <div class="flex items-center">
-    <!-- Logo Image -->
     <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-32" src="assets/logo.png"/>
    </div>
    <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
-    <a class="hover:text-orange-400 transition-colors" href="index.html">
-     Home
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="services.html">
-     Services
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="service-areas.html">
-     Service Area
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="about.html">
-     About Us
-    </a>
+    <a class="hover:text-orange-400 transition-colors" href="index.html">Home</a>
+    <a class="hover:text-orange-400 transition-colors" href="services.html">Services</a>
+    <a class="hover:text-orange-400 transition-colors" href="service-areas.html">Service Area</a>
+    <a class="hover:text-orange-400 transition-colors" href="about.html">About Us</a>
     <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
-     <i class="far fa-question-circle mr-2">
-     </i>
+     <i class="far fa-question-circle mr-2"></i>
      FAQs
     </a>
-    <a class="hover:text-orange-400 transition-colors" href="contact.html">
-     Contact Us
-    </a>
+    <a class="hover:text-orange-400 transition-colors" href="contact.html">Contact Us</a>
    </div>
   </nav>
-  </header>
 
-  <!-- Hero Section (UPDATED to match previous hero style) -->
+  <!-- Hero Section -->
   <section class="bg-hero relative h-[400px] flex items-center justify-center overflow-hidden">
    <div class="relative z-10 text-center">
     <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
      Our Services
     </h1>
    </div>
-
-   <!-- Decorative Dot Grid -->
    <div class="absolute right-10 bottom-10 w-48 h-48 dot-grid opacity-30 hidden md:block"></div>
   </section>
 
   <!-- Main Content Section -->
   <main class="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-   <!-- Left Column: Image -->
    <div class="w-full">
-    <img alt="A professional plumber in blue overalls working on the pipes under a white kitchen sink" class="rounded-3xl shadow-2xl w-full object-cover" src="assets/plumber-9"/>
+    <!-- NOTE: make sure this file exists and has an extension like .jpg/.png -->
+    <img alt="A professional plumber in blue overalls working on the pipes under a white kitchen sink" class="rounded-3xl shadow-2xl w-full object-cover" src="assets/plumber-9.jpg"/>
    </div>
 
-   <!-- Right Column: Services List -->
    <div class="space-y-10">
-    <!-- Commercial Plumbing -->
     <div>
      <h2 class="text-xl font-bold flex items-center gap-3 mb-4">
       <i class="fas fa-check-circle text-white"></i>
@@ -101,7 +79,6 @@
      </ul>
     </div>
 
-    <!-- Residential Plumbing -->
     <div>
      <h2 class="text-xl font-bold flex items-center gap-3 mb-4">
       <i class="fas fa-check-circle text-white"></i>
@@ -116,7 +93,6 @@
      </ul>
     </div>
 
-    <!-- Additional Services -->
     <div>
      <h2 class="text-xl font-bold flex items-center gap-3 mb-4">
       <i class="fas fa-check-circle text-white"></i>
@@ -130,7 +106,6 @@
      </ul>
     </div>
 
-    <!-- Additional Services Text -->
     <div class="pt-6">
      <h2 class="text-2xl font-bold mb-4">
       Additional Services
@@ -142,7 +117,6 @@
    </div>
   </main>
 
-  <!-- Footer -->
   <footer class="bg-[#020617] py-16 border-t border-gray-800">
    <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
     <img alt="Seaside Plumbing &amp; Mechanical Logo" class="h-24 mb-8" src="assets/logo.png"/>
