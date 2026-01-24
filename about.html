@@ -15,11 +15,14 @@
         <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
       </a>
 
-      <nav class="nav" id="nav">
-        <a href="index.html">Home</a>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a class="active" href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="faq.html">FAQ</a>
+        <a href="photos.html">Photos</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
       </nav>
 
       <button class="menu-btn" type="button" aria-label="Open menu"
@@ -29,64 +32,56 @@
     </div>
   </header>
 
-  <main id="main">
+ <main id="main">
+  <!-- Page banner -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Us</h1>
+    </div>
+  </section>
 
-    <!-- Page banner -->
-    <section class="page-hero">
-      <div class="container">
-        <h1>About Us</h1>
-      </div>
-    </section>
+  <!-- About split -->
+  <section class="about-split">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2 class="about-h2">Honest Plumbing You Can<br>Rely On</h2>
 
-    <!-- About split (centered like screenshot) -->
-    <section class="about-wrap">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-copy">
-            <h2 class="about-title">Honest Plumbing You Can<br/>Rely On</h2>
+          <p class="about-p">
+            Seaside Plumbing &amp; Mechanical is a husband-and-wife owned company built on quality workmanship,
+            clear communication, and dependable service. After relocating to North Carolina from California,
+            we started Seaside with one goal: provide plumbing done the right way—no shortcuts, no pressure,
+            and no unnecessary upsells.
+          </p>
 
-            <p class="about-text">
-              Seaside Plumbing &amp; Mechanical is a husband-and-wife owned company built on quality
-              workmanship, clear communication, and dependable service. After relocating to North
-              Carolina from California, we started Seaside with one goal: provide plumbing done the
-              right way—no shortcuts, no pressure, and no unnecessary upsells.
-            </p>
+          <p class="about-p">
+            We show up when we say we will, explain the issue in plain language, and give honest recommendations
+            before any work begins. Whether it’s a small repair or a larger job, we take pride in craftsmanship
+            and treat every home or facility with respect.
+          </p>
 
-            <p class="about-text">
-              We show up when we say we will, explain the issue in plain language, and give honest
-              recommendations before any work begins. Whether it’s a small repair or a larger job,
-              we take pride in craftsmanship and treat every home or facility with respect.
-            </p>
-
-            <p class="about-text">
-              When you call Seaside Plumbing &amp; Mechanical, you’re hiring a local team that stands
-              behind its work.
-            </p>
-          </div>
-
-          <div class="about-photo">
-            <img src="assets/plumber-8.jpg" alt="Seaside Plumbing & Mechanical at work">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews (matches screenshot, but NO "100+ happy clients") -->
-    <section class="reviews-wrap">
-      <div class="container">
-
-     https://www.yelp.com/biz/seaside-plumbing-and-mechanical-wilmington?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)
-        <!-- If you’re using reviewexpand, paste their embed code below -->
-        <div class="reviews-card">
-          <!-- Example placeholder (remove this line once you paste your widget) -->
-          <p style="margin:0; color: rgba(255,255,255,.75); text-align:center;">
-            Paste your reviews widget embed code here.
+          <p class="about-p">
+            When you call Seaside Plumbing &amp; Mechanical, you’re hiring a local team that stands behind its work.
           </p>
         </div>
-      </div>
-    </section>
 
-  </main>
+        <figure class="about-photo">
+          <img src="assets/plumber-hero.jpg" alt="Plumber working on a kitchen sink" />
+        </figure>
+      </div>
+
+      <!-- OPTIONAL: Reviews section (only add an embed code, not a plain link)
+      <section class="about-reviews">
+        <h2 class="about-reviews-title">Reviews</h2>
+        <div class="about-reviews-card">
+          <!-– Paste your widget embed code here (script/iframe), NOT a raw URL –->
+        </div>
+      </section>
+      -->
+    </div>
+  </section>
+</main>
+
 
   <!-- Footer (like your screenshot) -->
   <footer class="site-footer footer-center">
