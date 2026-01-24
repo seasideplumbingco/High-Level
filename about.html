@@ -3,90 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seaside Plumbing & Mechanical | About</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>About Us | Seaside Plumbing & Mechanical</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <button class="menu-btn" type="button" aria-label="Open menu"
+        onclick="document.getElementById('nav').classList.toggle('open')">
+        Menu
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Page banner -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>About Us</h1>
+      </div>
+    </section>
+
+    <!-- About split (centered like screenshot) -->
+    <section class="about-wrap">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-copy">
+            <h2 class="about-title">Honest Plumbing You Can<br/>Rely On</h2>
+
+            <p class="about-text">
+              Seaside Plumbing &amp; Mechanical is a husband-and-wife owned company built on quality
+              workmanship, clear communication, and dependable service. After relocating to North
+              Carolina from California, we started Seaside with one goal: provide plumbing done the
+              right way—no shortcuts, no pressure, and no unnecessary upsells.
+            </p>
+
+            <p class="about-text">
+              We show up when we say we will, explain the issue in plain language, and give honest
+              recommendations before any work begins. Whether it’s a small repair or a larger job,
+              we take pride in craftsmanship and treat every home or facility with respect.
+            </p>
+
+            <p class="about-text">
+              When you call Seaside Plumbing &amp; Mechanical, you’re hiring a local team that stands
+              behind its work.
+            </p>
+          </div>
+
+          <div class="about-photo">
+            <img src="assets/plumber-4.jpg" alt="Seaside Plumbing & Mechanical at work">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews (matches screenshot, but NO "100+ happy clients") -->
+    <section class="reviews-wrap">
+      <div class="container">
+        <h2 class="reviews-title">Don’t Just Take<br/>Our Words</h2>
+
+        <!-- Put your review widget/embed here -->
+        <!-- If you’re using reviewexpand, paste their embed code below -->
+        <div class="reviews-card">
+          <!-- Example placeholder (remove this line once you paste your widget) -->
+          <p style="margin:0; color: rgba(255,255,255,.75); text-align:center;">
+            Paste your reviews widget embed code here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (like your screenshot) -->
+  <footer class="site-footer footer-center">
+    <div class="container footer-inner footer-stack">
       <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-      <div>
-        <div class="brand-name">Seaside Plumbing<br>& Mechanical</div>
-        <div class="brand-sub">Residential & Commercial</div>
-      </div>
-    </a>
-
-    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
-
-  <nav id="nav" class="nav" aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="service-areas.html">Service Areas</a>
-  <a href="faq.html">FAQ</a>
-  <a href="photos.html">Photos</a>
-  <a href="about.html">About Us</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-  </div>
-</header>
-
-<main id="main">
-
-  <section class="about-split">
-    <div class="container">
-      <div class="about-grid">
-
-        <!-- LEFT: TEXT -->
-        <div>
-          <h1>Honest Plumbing You Can<br>Rely On</h1>
-
-          <p class="lead">
-            Seaside Plumbing &amp; Mechanical is a husband-and-wife owned company built on
-            quality workmanship, clear communication, and dependable service. After relocating
-            to North Carolina from California, we started Seaside with one goal: provide plumbing
-            done the right way—no shortcuts, no pressure, and no unnecessary upsells.
-          </p>
-
-          <p class="lead" style="margin-top:14px;">
-            We show up when we say we will, explain the issue in plain language, and give honest
-            recommendations before any work begins. Whether it’s a small repair or a larger job,
-            we take pride in craftsmanship and treat every home or facility with respect.
-          </p>
-
-          <p class="lead" style="margin-top:14px;">
-            When you call Seaside Plumbing &amp; Mechanical, you’re hiring a local team that stands
-            behind its work.
-          </p>
-
-          <div class="cta-row" style="justify-content:flex-start; margin-top:22px;">
-        </div>
-
-        <!-- RIGHT: IMAGE -->
-        <div class="about-photo">
-          <img src="assets/plumber-8.jpg" alt="Plumber working on a commercial installation">
-        </div>
-
+      <div>© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</div>
+      <div class="fine">
+        Seaside Plumbing &amp; Mechanical | 960-760-1009 | jonathanb@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)
       </div>
     </div>
-  </section>
+  </footer>
 
-</main>
-
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-    <div>© 2026 Seaside Plumbing & Mechanical — All rights reserved.</div>
-    <div class="fine">
-      Seaside Plumbing & Mechanical | 960-760-1009 | jonathanb@seasideplumbingco.com | Hours: 24/7 (emergency calls)
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
