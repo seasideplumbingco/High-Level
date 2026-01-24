@@ -95,17 +95,18 @@
       <input class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="phone" placeholder="Phone Number" type="tel"/>
      </div>
      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <select class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="request_type" required="">
-       <option value="">
-        Request Type (Required)
-       </option>
-       <option value="Residential">
-        Residential
-       </option>
-       <option value="Commercial">
-        Commercial
-       </option>
-      </select>
+      <select
+  name="request_type"
+  required
+  class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors"
+>
+  <option value="" disabled selected>
+    Choose one
+  </option>
+  <option value="Residential">Residential</option>
+  <option value="Commercial">Commercial</option>
+</select>
+
       <input class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="subject" placeholder="Subject" type="text"/>
      </div>
      <textarea class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="message" placeholder="Please include the service location, timeline, and any other details needed." required="" rows="6"></textarea>
