@@ -1,112 +1,133 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services | Seaside Plumbing & Mechanical</title>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Seaside Plumbing &amp; Mechanical - Our Services
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #020617;
+        }
 
-  <!-- IMPORTANT: make sure this matches your file name -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
+        /* ADDED: matches your previous hero approach */
+        .bg-hero {
+            background-image: linear-gradient(rgba(2, 6, 23, 0.80), rgba(2, 6, 23, 0.80)), url('assets/hero-under-sink.jpg');
+            background-size: cover;
+            background-position: center;
+        }
 
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+        .dot-grid {
+            background-image: radial-gradient(circle, #ffffff33 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+  </style>
+ </head>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Seaside Plumbing & Mechanical home">
-        <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo" />
-      </a>
-
-       <nav class="nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="service-areas.html">Service Areas</a>
-        <a href="faq.html">FAQ</a>
-        <a href="photos.html">Photos</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <button class="menu-btn" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false"
-        onclick="document.getElementById('siteNav').classList.toggle('open'); this.setAttribute('aria-expanded', document.getElementById('siteNav').classList.contains('open'));">
-        Menu
-      </button>
-    </div>
+ <body class="text-white">
+  <!-- Header -->
+  <header class="bg-[#020617] py-4 px-8 md:px-16 flex justify-between items-center">
+   <div class="flex items-center">
+    <img alt="Seaside Plumbing &amp; Mechanical Logo featuring a sunset, waves, and a wrench" class="h-24" src="https://placehold.co/150x100/000000/FFFFFF?text=SEASIDE+PLUMBING+&amp;+MECHANICAL+LOGO&amp;font=montserrat"/>
+   </div>
+   <nav class="hidden md:flex space-x-12 text-sm font-medium">
+    <a class="hover:text-blue-400 transition" href="#">Home</a>
+    <a class="hover:text-blue-400 transition" href="#">Services</a>
+    <a class="hover:text-blue-400 transition" href="#">About Us</a>
+    <a class="hover:text-blue-400 transition" href="#">Contact Us</a>
+   </nav>
   </header>
 
-  <main id="main">
-    <!-- HERO STRIP -->
-    <section class="page-hero">
-      <div class="container">
-        <h1>Our Services</h1>
-      </div>
-    </section>
+  <!-- Hero Section (UPDATED to match previous hero style) -->
+  <section class="bg-hero relative h-[400px] flex items-center justify-center overflow-hidden">
+   <div class="relative z-10 text-center">
+    <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
+     Our Services
+    </h1>
+   </div>
 
-    <!-- CENTERED SERVICES PANEL -->
-    <section class="services-panel">
-      <div class="container">
-        <div class="panel services-card-center">
-          <div class="services-layout services-layout-center">
-            <!-- left image -->
-            <div class="services-image services-image-fixed">
-              <img src="assets/plumber-9.jpg" alt="Plumbing service work" />
-            </div>
+   <!-- Decorative Dot Grid -->
+   <div class="absolute right-10 bottom-10 w-48 h-48 dot-grid opacity-30 hidden md:block"></div>
+  </section>
 
-            <!-- right list -->
-            <div class="services-groups">
-              <div class="svc-group">
-                <h3 class="group-title">Commercial Plumbing</h3>
-                <ul class="checklist">
-                  <li><span class="check">✓</span> Commercial system installation and upgrades</li>
-                  <li><span class="check">✓</span> Commercial drain and sewer cleaning</li>
-                  <li><span class="check">✓</span> Backflow prevention and testing</li>
-                  <li><span class="check">✓</span> Gas line services for commercial properties</li>
-                  <li><span class="check">✓</span> Emergency commercial repairs</li>
-                </ul>
-              </div>
+  <!-- Main Content Section -->
+  <main class="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+   <!-- Left Column: Image -->
+   <div class="w-full">
+    <img alt="A professional plumber in blue overalls working on the pipes under a white kitchen sink" class="rounded-3xl shadow-2xl w-full object-cover" src="assets/plumber-9"/>
+   </div>
 
-              <div class="svc-group">
-                <h3 class="group-title">Residential Plumbing</h3>
-                <ul class="checklist">
-                  <li><span class="check">✓</span> Home plumbing installation and replacement</li>
-                  <li><span class="check">✓</span> Kitchen and bathroom repairs</li>
-                  <li><span class="check">✓</span> Water heater repair and installation</li>
-                  <li><span class="check">✓</span> Leak detection and pipe repair</li>
-                  <li><span class="check">✓</span> Drain cleaning and unclogging</li>
-                </ul>
-              </div>
+   <!-- Right Column: Services List -->
+   <div class="space-y-10">
+    <!-- Commercial Plumbing -->
+    <div>
+     <h2 class="text-xl font-bold flex items-center gap-3 mb-4">
+      <i class="fas fa-check-circle text-white"></i>
+      Commercial Plumbing
+     </h2>
+     <ul class="space-y-3 ml-8">
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Commercial system installation and upgrades</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Commercial drain and sewer cleaning</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Backflow prevention and testing</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Gas line services for commercial properties</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Emergency commercial repairs</li>
+     </ul>
+    </div>
 
-              <div class="svc-group">
-                <h3 class="group-title">Additional Services</h3>
-                <ul class="checklist">
-                  <li><span class="check">✓</span> Preventive maintenance programs</li>
-                  <li><span class="check">✓</span> Pipe inspections and camera diagnostics</li>
-                  <li><span class="check">✓</span> Sump pump service and installation</li>
-                  <li><span class="check">✓</span> Fixture upgrades and replacements</li>
-                </ul>
-              </div>
+    <!-- Residential Plumbing -->
+    <div>
+     <h2 class="text-xl font-bold flex items-center gap-3 mb-4">
+      <i class="fas fa-check-circle text-white"></i>
+      Residential Plumbing
+     </h2>
+     <ul class="space-y-3 ml-8">
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Home plumbing installation and replacement</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Kitchen and bathroom repairs</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Water heater repair and installation</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Leak detection and pipe repair</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Drain cleaning and unclogging</li>
+     </ul>
+    </div>
 
-              <div class="services-note">
-                <h2>Additional Services</h2>
-                <p>We follow established safety protocols and comply with applicable codes.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Additional Services -->
+    <div>
+     <h2 class="text-xl font-bold flex items-center gap-3 mb-4">
+      <i class="fas fa-check-circle text-white"></i>
+      Additional Services
+     </h2>
+     <ul class="space-y-3 ml-8">
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Preventive maintenance programs</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Pipe inspections and camera diagnostics</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Sump pump service and installation</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Fixture upgrades and replacements</li>
+     </ul>
+    </div>
+
+    <!-- Additional Services Text -->
+    <div class="pt-6">
+     <h2 class="text-2xl font-bold mb-4">
+      Additional Services
+     </h2>
+     <p class="text-gray-300 leading-relaxed">
+      We follow established safety protocols and comply with applicable codes.
+     </p>
+    </div>
+   </div>
   </main>
 
-  <!-- FOOTER (matches your screenshot style) -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo" />
-      <div class="fine">© 2026 Seaside Plumbing & Mechanical - All rights reserved.</div>
-      <div class="fine">Seaside Plumbing & Mechanical | 960-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)</div>
+  <!-- Footer -->
+  <footer class="bg-[#020617] py-16 border-t border-gray-800">
+   <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
+    <img alt="Seaside Plumbing &amp; Mechanical Logo" class="h-24 mb-8" src="https://placehold.co/150x100/000000/FFFFFF?text=SEASIDE+PLUMBING+&amp;+MECHANICAL+LOGO&amp;font=montserrat"/>
+    <div class="text-xs text-gray-400 space-y-2">
+     <p>© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</p>
+     <p>Seaside Plumbing &amp; Mechanical | 960-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)</p>
     </div>
+   </div>
   </footer>
-
-</body>
+ </body>
 </html>
