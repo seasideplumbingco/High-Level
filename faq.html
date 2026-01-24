@@ -1,167 +1,141 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Page-only styles (bubble FAQ look) -->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Seaside Plumbing &amp; Mechanical - FAQs
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
   <style>
-    .faq-wrap{
-      margin-top: 34px;
-      display: grid;
-      gap: 14px;
-      max-width: 920px;
-      margin-inline: auto;
-    }
+   body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #020617;
+        }
 
-    .faq-item{
-      background: rgba(14,26,58,.55);
-      border: 1px solid rgba(255,255,255,.10);
-      border-radius: 18px;
-      box-shadow: 0 18px 50px rgba(0,0,0,.22);
-      overflow: hidden;
-    }
+        .bg-hero {
+            background-image: linear-gradient(rgba(2, 6, 23, 0.80), rgba(2, 6, 23, 0.80)), url('assets/hero-under-sink.jpg');
+            background-size: cover;
+            background-position: center;
+        }
 
-    .faq-q{
-      cursor: pointer;
-      list-style: none;
-      padding: 18px 18px;
-      font-weight: 900;
-      color: rgba(255,255,255,.92);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      user-select: none;
-    }
-
-    /* hide default marker */
-    .faq-q::-webkit-details-marker{ display:none; }
-
-    /* custom chevron */
-    .faq-q::after{
-      content: "▾";
-      font-size: 18px;
-      opacity: .85;
-      transition: transform .18s ease;
-    }
-    details[open] .faq-q::after{
-      transform: rotate(180deg);
-    }
-
-    .faq-a{
-      padding: 0 18px 18px;
-      color: rgba(255,255,255,.75);
-      line-height: 1.65;
-    }
-
-    .faq-a p{ margin: 0; }
-
-    /* subtle hover */
-    .faq-item:hover{
-      border-color: rgba(246,165,0,.25);
-    }
+        .dot-grid {
+            background-image: radial-gradient(circle, #ffffff33 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
   </style>
-</head>
+ </head>
 
-<body>
+ <body class="text-white">
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
+  <!-- Navigation (MATCHES your correct template) -->
+  <nav class="flex items-center justify-between px-12 py-4 bg-[#020617]">
+   <div class="flex items-center">
+    <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-32" src="assets/logo.png"/>
+   </div>
+   <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
+    <a class="hover:text-orange-400 transition-colors" href="index.html">Home</a>
+    <a class="hover:text-orange-400 transition-colors" href="services.html">Services</a>
+    <a class="hover:text-orange-400 transition-colors" href="service-areas.html">Service Area</a>
+    <a class="hover:text-orange-400 transition-colors" href="about.html">About Us</a>
+    <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
+     <i class="far fa-question-circle mr-2"></i>
+     FAQs
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="contact.html">Contact Us</a>
+   </div>
+  </nav>
 
-      <a class="brand" href="index.html">
-        <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-        <div>
-      </a>
+  <!-- Hero Section -->
+  <section class="bg-hero relative h-[400px] flex items-center justify-center overflow-hidden">
+   <div class="relative z-10 text-center">
+    <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
+     FAQs
+    </h1>
+   </div>
+   <div class="absolute right-10 bottom-10 w-48 h-48 dot-grid opacity-30 hidden md:block"></div>
+  </section>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="service-areas.html">Service Areas</a>
-        <a href="faq.html" class="active">FAQ</a>
-        <a href="photos.html">Photos</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <!-- Main Content Section -->
+  <main class="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+   <div class="w-full">
+    <img alt="A professional plumber in blue overalls working on the pipes under a white kitchen sink" class="rounded-3xl shadow-2xl w-full object-cover" src="assets/plumber-9.jpg"/>
+   </div>
 
+   <div class="space-y-10">
+    <div>
+     <h2 class="text-xl font-bold flex items-center gap-3 mb-4">
+      <i class="fas fa-check-circle text-white"></i>
+      Commercial Plumbing
+     </h2>
+     <ul class="space-y-3 ml-8">
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Commercial system installation and upgrades</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Commercial drain and sewer cleaning</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Backflow prevention and testing</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Gas line services for commercial properties</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Emergency commercial repairs</li>
+     </ul>
     </div>
-  </header>
 
-  <!-- MAIN -->
-  <main id="main">
-    <section class="section">
-      <div class="container">
+    <div>
+     <h2 class="text-xl font-bold flex items-center gap-3 mb-4">
+      <i class="fas fa-check-circle text-white"></i>
+      Residential Plumbing
+     </h2>
+     <ul class="space-y-3 ml-8">
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Home plumbing installation and replacement</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Kitchen and bathroom repairs</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Water heater repair and installation</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Leak detection and pipe repair</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Drain cleaning and unclogging</li>
+     </ul>
+    </div>
 
-        <h1 class="section-title">Frequently Asked Questions</h1>
-        <p class="section-sub">Clear answers to common questions about our plumbing services.</p>
+    <div>
+     <h2 class="text-xl font-bold flex items-center gap-3 mb-4">
+      <i class="fas fa-check-circle text-white"></i>
+      Additional Services
+     </h2>
+     <ul class="space-y-3 ml-8">
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Preventive maintenance programs</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Pipe inspections and camera diagnostics</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Sump pump service and installation</li>
+      <li class="flex items-center gap-3 text-gray-300"><i class="fas fa-check-circle text-sm text-white"></i>Fixture upgrades and replacements</li>
+     </ul>
+    </div>
 
-        <div class="faq-wrap">
-
-          <details class="faq-item">
-            <summary class="faq-q">What areas do you serve?</summary>
-            <div class="faq-a">
-              <p>We serve coastal North Carolina and surrounding areas. Visit our <a href="service-areas.html">Service Areas</a> page for details.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">Do you handle commercial new construction projects?</summary>
-            <div class="faq-a">
-              <p>Yes. We support commercial new construction and facility plumbing needs. Contact us with your project scope, location, and timeline.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">Do you offer residential plumbing services?</summary>
-            <div class="faq-a">
-              <p>Yes. We provide repairs, replacements, installations, and maintenance for residential plumbing systems.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">Are you licensed and insured?</summary>
-            <div class="faq-a">
-              <p>Yes. We operate under a properly licensed business and carry insurance for covered work.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">How do I request a commercial bid or residential quote?</summary>
-            <div class="faq-a">
-              <p>Use our <a href="contact.html">contact form</a> or call us with your scope, location, and timeline. We’ll follow up during business hours.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">Do you provide emergency plumbing services?</summary>
-            <div class="faq-a">
-              <p>Please contact us as soon as possible and we’ll do our best to assist based on availability.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-q">Do you offer free estimates?</summary>
-            <div class="faq-a">
-              <p>Yes. We provide free estimates for many projects. Share your details and we’ll advise on next steps.</p>
-            </div>
-          </details>
-
-        </div>
-
-      </div>
-    </section>
+    <div class="pt-6">
+     <h2 class="text-2xl font-bold mb-4">
+      Additional Services
+     </h2>
+     <p class="text-gray-300 leading-relaxed">
+      We follow established safety protocols and comply with applicable codes.
+     </p>
+    </div>
+   </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-      <div class="fine">© 2026 Seaside Plumbing &amp; Mechanical · All rights reserved.</div>
+  <!-- Footer (MATCHES your correct template) -->
+  <footer class="bg-[#020617] py-16 border-t border-gray-800">
+   <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
+    <img alt="Seaside Plumbing &amp; Mechanical Logo" class="h-32 w-auto mb-8" src="assets/logo.png" width="150" height="150"/>
+    <div class="text-gray-400 text-sm space-y-2">
+     <p>
+      © 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.
+     </p>
+     <p class="flex flex-wrap justify-center gap-x-2">
+      <span>Seaside Plumbing &amp; Mechanical</span>
+      <span class="hidden md:inline">|</span>
+      <span>960-760-1009</span>
+      <span class="hidden md:inline">|</span>
+      <span>info@seasideplumbingco.com</span>
+      <span class="hidden md:inline">|</span>
+      <span>Hours: 24/7 (perform emergency calls)</span>
+     </p>
     </div>
+   </div>
   </footer>
 
-</body>
+ </body>
 </html>
