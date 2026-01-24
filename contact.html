@@ -1,117 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Seaside Plumbing & Mechanical</title>
-
-  <!-- MAIN SITE STYLES -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-
-<!-- ================= HEADER / NAV ================= -->
-<header class="site-header">
-  <div class="nav-container">
-    <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical">
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Contact Us - Seaside Plumbing &amp; Mechanical
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+        }
+        .hero-overlay {
+            background: rgba(2, 6, 23, 0.7);
+        }
+        .dot-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        input, select, textarea {
+            background-color: #0f172a !important;
+            border-color: #334155 !important;
+            color: white !important;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #94a3b8 !important;
+        }
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2394a3b8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+        }
+  </style>
+ </head>
+ <body class="antialiased text-white">
+  <!-- Navigation -->
+  <nav class="flex items-center justify-between px-12 py-4 bg-[#020617]">
+   <div class="flex items-center">
+    <!-- Logo Image -->
+    <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-32" src="assets/logo.png"/>
+   </div>
+   <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
+    <a class="hover:text-orange-400 transition-colors" href="index.html">
+     Home
     </a>
-
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="service-areas.html">Service Areas</a>
-      <a href="faq.html">FAQ</a>
-      <a href="photos.html">Photos</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- ================= PAGE HERO ================= -->
-<section class="page-hero">
-  <h1>Contact Us</h1>
-  <p>Tell us what’s going on — we’ll get you scheduled ASAP.</p>
-</section>
-
-<!-- ================= CONTACT SECTION ================= -->
-<main class="section">
-  <div class="container contact-grid">
-
-    <!-- ===== CONTACT FORM ===== -->
-    <div class="contact-form">
-      <h2>Request Service</h2>
-
-      <form
-        action="https://formspree.io/f/mbdglobk"
-        method="POST"
-      >
-
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Full Name" required>
-          <input type="email" name="email" placeholder="Email Address" required>
-        </div>
-
-        <div class="form-row">
-          <input type="text" name="company" placeholder="Company Name (optional)">
-          <input type="tel" name="phone" placeholder="Phone Number">
-        </div>
-
-        <div class="form-row">
-          <select name="request_type" required>
-            <option value="">Request Type (Required)</option>
-            <option value="Residential">Residential</option>
-            <option value="Commercial">Commercial</option>
-          </select>
-
-          <input type="text" name="subject" placeholder="Subject">
-        </div>
-
-        <textarea
-          name="message"
-          rows="6"
-          placeholder="Please include the service location, timeline, and any other details needed."
-          required
-        ></textarea>
-
-        <!-- OPTIONAL: Redirect after submit -->
-        <!-- <input type="hidden" name="_redirect" value="https://seasideplumbingco.com/thank-you.html"> -->
-
-        <button type="submit" class="btn btn-primary">
-          Submit Request →
-        </button>
-      </form>
-
-      <p class="form-note">
-        We typically respond within one business day. For urgent issues, please call directly.
-      </p>
+    <a class="hover:text-orange-400 transition-colors" href="services.html">
+     Services
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="service-areas.html">
+     Service Area
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="about.html">
+     About Us
+    </a>
+    <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
+     <i class="far fa-question-circle mr-2">
+     </i>
+     FAQs
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="contact.html">
+     Contact Us
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="relative h-[450px] flex items-center justify-center overflow-hidden">
+   <img alt="A professional plumber in a blue uniform working on pipes under a kitchen sink" class="absolute inset-0 w-full h-full object-cover" height="600" src="https://replicate.delivery/xezq/3sCbRoWtreQOF6Kfq3NgL2fWtuBCAcomyR48Ep8ru0MNuRBsA/out.png" width="1920"/>
+   <div class="absolute inset-0 hero-overlay">
+   </div>
+   <!-- Dot Pattern Overlay -->
+   <div class="absolute right-0 bottom-0 w-1/3 h-1/2 dot-pattern opacity-50 pointer-events-none">
+   </div>
+   <div class="relative z-10 text-center">
+    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">
+     Contact Us
+    </h1>
+   </div>
+  </section>
+  <!-- Contact Content Section -->
+  <section class="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+   <div>
+    <h2 class="text-5xl font-extrabold mb-6 leading-tight">
+     Love To Get
+     <br/>
+     In Touch!
+    </h2>
+    <div class="space-y-2 text-xl">
+     <p>
+      <span class="font-bold">
+       Phone:
+      </span>
+      910-760-1009
+     </p>
+     <p>
+      <span class="font-bold">
+       Email:
+      </span>
+      info@Seasideplumbingco.Com
+     </p>
     </div>
-
-    <!-- ===== BUSINESS INFO ===== -->
-    <div class="contact-info">
-      <h2>Business Info</h2>
-      <ul>
-        <li><strong>Phone:</strong> 960-760-1009</li>
-        <li><strong>Email:</strong> info@seasideplumbingco.com</li>
-        <li><strong>Hours:</strong> 24/7 (emergency calls)</li>
-      </ul>
+   </div>
+   <!-- ===== CONTACT FORM ===== -->
+   <div class="contact-form bg-[#020617]">
+    <h2 class="text-3xl font-bold mb-8">
+     Request Service
+    </h2>
+    <form action="https://formspree.io/f/mbdglobk" class="space-y-4" method="POST">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <input class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="name" placeholder="Full Name" required="" type="text"/>
+      <input class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="email" placeholder="Email Address" required="" type="email"/>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <input class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="company" placeholder="Company Name (optional)" type="text"/>
+      <input class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="phone" placeholder="Phone Number" type="tel"/>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <select class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="request_type" required="">
+       <option value="">
+        Request Type (Required)
+       </option>
+       <option value="Residential">
+        Residential
+       </option>
+       <option value="Commercial">
+        Commercial
+       </option>
+      </select>
+      <input class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="subject" placeholder="Subject" type="text"/>
+     </div>
+     <textarea class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors" name="message" placeholder="Please include the service location, timeline, and any other details needed." required="" rows="6"></textarea>
+     <!-- OPTIONAL: Redirect after submit -->
+     <!-- <input type="hidden" name="_redirect" value="https://seasideplumbingco.com/thank-you.html"> -->
+     <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded transition-colors flex items-center justify-center md:justify-start" type="submit">
+      Submit Request →
+     </button>
+    </form>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-[#020617] py-16 border-t border-gray-800">
+   <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
+    <img alt="Seaside Plumbing &amp; Mechanical Logo" class="h-32 w-auto mb-8" height="150" src="assets/logo.png" width="150"/>
+    <div class="text-gray-400 text-sm space-y-2">
+     <p>
+      © 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.
+     </p>
+     <p class="flex flex-wrap justify-center gap-x-2">
+      <span>
+       Seaside Plumbing &amp; Mechanical
+      </span>
+      <span class="hidden md:inline">
+       |
+      </span>
+      <span>
+       960-760-1009
+      </span>
+      <span class="hidden md:inline">
+       |
+      </span>
+      <span>
+       info@seasideplumbingco.com
+      </span>
+      <span class="hidden md:inline">
+       |
+      </span>
+      <span>
+       Hours: 24/7 (perform emergency calls)
+      </span>
+     </p>
     </div>
-
-  </div>
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical">
-
-  <p>© 2026 Seaside Plumbing & Mechanical — All rights reserved.</p>
-  <p>
-    Seaside Plumbing & Mechanical | 960-760-1009 |
-    info@seasideplumbingco.com | Hours: 24/7 (emergency calls)
-  </p>
-</footer>
-
-</body>
+   </div>
+  </footer>
+ </body>
 </html>
