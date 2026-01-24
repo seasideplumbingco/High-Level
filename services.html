@@ -29,23 +29,31 @@
 
  <body class="text-white">
 
-  <!-- Navigation (FIXED to match your correct template) -->
-  <nav class="flex items-center justify-between px-12 py-4 bg-[#020617]">
-   <div class="flex items-center">
-    <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-32" src="assets/logo.png"/>
-   </div>
-   <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
+<!-- Navigation -->
+<nav class="relative z-50 flex items-center justify-between px-12 py-4 bg-[#020617]">
+  <div class="flex items-center">
+    <a href="index.html" class="inline-flex items-center">
+      <img
+        src="assets/logo.png"
+        alt="Seaside Plumbing & Mechanical logo"
+        class="h-32 w-auto"
+      />
+    </a>
+  </div>
+
+  <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
     <a class="hover:text-orange-400 transition-colors" href="index.html">Home</a>
     <a class="hover:text-orange-400 transition-colors" href="services.html">Services</a>
     <a class="hover:text-orange-400 transition-colors" href="service-areas.html">Service Area</a>
     <a class="hover:text-orange-400 transition-colors" href="about.html">About Us</a>
+    <a class="hover:text-orange-400 transition-colors" href="photos.html">Photos</a>
     <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
-     <i class="far fa-question-circle mr-2"></i>
-     FAQs
+      <i class="far fa-question-circle mr-2"></i>
+      FAQs
     </a>
     <a class="hover:text-orange-400 transition-colors" href="contact.html">Contact Us</a>
-   </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <section class="bg-hero relative h-[400px] flex items-center justify-center overflow-hidden">
