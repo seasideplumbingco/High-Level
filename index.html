@@ -1,7 +1,6 @@
 <html>
  <head>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
   <style>
@@ -9,11 +8,17 @@
             font-family: 'Inter', sans-serif;
             background-color: #020617;
             color: white;
+            scroll-behavior: smooth;
         }
         .bg-hero {
-            background-image: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url('https://placehold.co/1920x1080?text=Plumber+Working+on+Pipes+Background');
+            /* UPDATED: hero background image */
+            background-image: linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.75)), url('assets/hero-under-sink.jpg');
             background-size: cover;
             background-position: center;
+        }
+        .dot-pattern {
+            background-image: radial-gradient(circle, #334155 1.5px, transparent 1.5px);
+            background-size: 20px 20px;
         }
         .wavy-mask {
             mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="%23FF0066" d="M44.7,-76.4C58.2,-69.2,70.1,-58.3,77.4,-45.1C84.7,-31.8,87.4,-15.9,85.3,-0.8C83.2,14.3,76.3,28.5,67.4,41.1C58.5,53.7,47.6,64.6,34.7,71.4C21.8,78.2,6.9,80.9,-8.2,79.5C-23.3,78.1,-38.6,72.6,-51.5,63.8C-64.4,55,-74.9,42.9,-80.8,29.1C-86.7,15.3,-88,0,-84.8,-14.1C-81.6,-28.2,-73.9,-41.1,-63.1,-51.1C-52.3,-61.1,-38.4,-68.2,-24.8,-75.3C-11.2,-82.4,2.1,-89.5,16.3,-89.5C30.5,-89.5,44.7,-82.4,44.7,-76.4Z" transform="translate(100 100)" /></svg>');
@@ -25,273 +30,191 @@
             -webkit-mask-repeat: no-repeat;
             -webkit-mask-position: center;
         }
-        .dot-pattern {
-            background-image: radial-gradient(circle, #334155 1px, transparent 1px);
-            background-size: 15px 15px;
-        }
   </style>
  </head>
  <body class="antialiased">
   <!-- Navigation -->
-  <nav class="flex items-center justify-between px-12 py-6 bg-[#020617]">
+  <nav class="flex items-center justify-between px-12 py-4 bg-[#020617]">
    <div class="flex items-center">
-    <img alt="Seaside Plumbing &amp; Mechanical Logo with a palm tree, sun, and plumbing tools" class="h-24" height="150" src="https://replicate.delivery/xezq/V73JfCkzUy2zNCuXiRj7AQVwWSCaBQByhI7nAifzHpMc0mAWA/out.png" width="150"/>
+    <!-- UPDATED: Logo Image -->
+    <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-32" src="assets/logo.png"/>
    </div>
-   <div class="hidden md:flex space-x-12 text-sm font-medium">
-    <a class="hover:text-orange-400" href="#">
-     Home
+   <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
+    <a class="hover:text-orange-400 transition-colors" href="#">Home</a>
+    <a class="hover:text-orange-400 transition-colors" href="#">Services</a>
+    <a class="hover:text-orange-400 transition-colors" href="#">Service Area</a>
+    <a class="hover:text-orange-400 transition-colors" href="#">About Us</a>
+    <a class="hover:text-orange-400 transition-colors flex items-center" href="#">
+     <i class="far fa-question-circle mr-2"></i>
+     FAQs
     </a>
-    <a class="hover:text-orange-400" href="#">
-     Services
-    </a>
-    <a class="hover:text-orange-400" href="#">
-     About Us
-    </a>
-    <a class="hover:text-orange-400" href="#">
-     Contact Us
-    </a>
+    <a class="hover:text-orange-400 transition-colors" href="#contact">Contact Us</a>
    </div>
   </nav>
+
   <!-- Hero Section -->
-  <section class="bg-hero h-[700px] flex flex-col items-center justify-center text-center px-4">
-   <h1 class="text-5xl md:text-7xl font-extrabold mb-6 max-w-5xl leading-tight">
-    Transform Your Home with Our Expert Plumbing Solutions
+  <section class="bg-hero h-[850px] flex flex-col items-center justify-center text-center px-4">
+   <h1 class="text-5xl md:text-7xl font-extrabold mb-8 max-w-5xl leading-[1.1]">
+    Transform Your Home
+    <br/>
+    with Our Expert Plumbing Solutions
    </h1>
-   <p class="text-lg md:text-xl mb-10 max-w-3xl text-gray-300">
+   <p class="text-lg md:text-xl mb-10 max-w-3xl text-gray-300 leading-relaxed">
     Get reliable, top-quality plumbing services that address all your needs—from repairs to installations. We bring years of expertise and trusted solutions that ensure your home runs smoothly.
    </p>
-   <a class="bg-[#f59e0b] text-black font-bold py-4 px-8 rounded-lg flex items-center hover:bg-orange-500 transition duration-300 mb-6" href="#">
-    Schedule a Estimate Today
-    <i class="fas fa-arrow-right ml-2">
-    </i>
-   </a>
-   <div class="flex flex-col items-center">
-    <div class="flex -space-x-2 mb-2">
-     <img alt="Customer avatar 1" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" height="100" src="https://replicate.delivery/xezq/XquHOvnj9jI8HpuakfgBxgaVmeJkRKX8GMYNypo4WLe5oNBsA/out.png" width="100"/>
-     <img alt="Customer avatar 2" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" height="100" src="https://replicate.delivery/xezq/kWbuONK2sdqfPiEmPafiQSxHzF0H81fjHI9RdouC7GZroNBsA/out.png" width="100"/>
-     <img alt="Customer avatar 3" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" height="100" src="https://replicate.delivery/xezq/WwxGjwvsKaqvF1b6VSWjgEYXzgYPJBvIjHSyRhO7PDoHtJgF/out.png" width="100"/>
-     <img alt="Customer avatar 4" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" height="100" src="https://replicate.delivery/xezq/I7C0BRJB537PI1kOXUznYk6u4L6mAVv9OKKoQRIYT7sGtJgF/out.png" width="100"/>
-     <img alt="Customer avatar 5" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" height="100" src="https://replicate.delivery/xezq/f9emdBLiffgCzQP5UgiZlq5DLTRs4QCtKpWZYBTRfaKfEtJgF/out.png" width="100"/>
-    </div>
-    <div class="flex items-center">
-     <div class="flex text-yellow-400 mr-2">
-      <i class="fas fa-star">
-      </i>
-      <i class="fas fa-star">
-      </i>
-      <i class="fas fa-star">
-      </i>
-      <i class="fas fa-star">
-      </i>
-      <i class="fas fa-star">
-      </i>
-     </div>
-     <span class="text-xs text-gray-300">
-      Loved by Our Customer
-     </span>
-    </div>
+   <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 mb-8">
+    <a class="bg-[#f59e0b] text-black font-bold py-4 px-10 rounded-lg flex items-center hover:bg-orange-500 transition duration-300" href="#contact">
+     Schedule a Estimate Today
+     <i class="fas fa-arrow-right ml-2"></i>
+    </a>
    </div>
   </section>
+
   <!-- The Plumbing Difference Section -->
-  <section class="py-24 px-12 md:px-24 flex flex-col md:flex-row items-center justify-between bg-[#020617]">
-   <div class="md:w-1/2 mb-12 md:mb-0">
-    <h2 class="text-4xl font-extrabold italic mb-8 leading-tight">
+  <section class="py-32 px-12 md:px-24 flex flex-col md:flex-row items-center justify-between bg-[#020617]">
+   <div class="md:w-1/2 mb-16 md:mb-0">
+    <h2 class="text-5xl font-extrabold italic mb-10 leading-tight">
      The Plumbing Difference
      <br/>
      You've Been Looking For...
     </h2>
-    <p class="text-gray-300 mb-6 leading-relaxed">
+    <p class="text-gray-300 mb-8 leading-relaxed text-lg">
      Tired of dealing with plumbing problems that never seem to go away? We provide reliable, high-quality plumbing services that ensure lasting solutions.
     </p>
-    <p class="text-gray-300 mb-10 leading-relaxed">
+    <p class="text-gray-300 mb-12 leading-relaxed text-lg">
      Our expert team addresses your needs efficiently and with precision, so you can enjoy peace of mind.
     </p>
-    <a class="bg-[#f59e0b] text-black font-bold py-3 px-8 rounded-lg inline-flex items-center hover:bg-orange-500 transition duration-300" href="#">
+    <a class="bg-[#f59e0b] text-black font-bold py-4 px-10 rounded-lg inline-flex items-center hover:bg-orange-500 transition duration-300" href="#">
      Call Now
-     <i class="fas fa-arrow-right ml-2">
-     </i>
+     <i class="fas fa-arrow-right ml-2"></i>
     </a>
    </div>
    <div class="md:w-1/2 relative flex justify-center">
-    <div class="absolute top-0 right-0 w-48 h-48 dot-pattern -z-10 opacity-50">
-    </div>
-    <div class="absolute bottom-0 left-0 w-48 h-48 dot-pattern -z-10 opacity-50">
-    </div>
-    <div class="wavy-mask w-full max-w-md aspect-square overflow-hidden">
-     <img alt="Professional plumber in blue uniform fixing a white PVC pipe under a sink" class="w-full h-full object-cover" src="https://placehold.co/600x600?text=Plumber+Fixing+Pipe"/>
+    <div class="absolute top-0 right-0 w-48 h-48 dot-pattern opacity-30 -mr-10 -mt-10"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 dot-pattern opacity-30 -ml-10 -mb-10"></div>
+    <div class="wavy-mask w-full max-w-lg aspect-square overflow-hidden">
+     <!-- UPDATED: wavy mask image -->
+     <img alt="Plumber working under a sink" class="w-full h-full object-cover" src="assets/plumber-1.jpg"/>
     </div>
    </div>
   </section>
+
   <!-- What We'll Provide Section -->
-  <section class="py-20 px-12 text-center bg-[#020617]">
-   <h2 class="text-5xl font-extrabold italic mb-8">
+  <section class="py-24 px-12 text-center bg-[#020617]">
+   <h2 class="text-6xl font-extrabold italic mb-10">
     What We'll Provide...
    </h2>
-   <p class="text-gray-300 max-w-5xl mx-auto leading-relaxed text-lg">
+   <p class="text-gray-300 max-w-6xl mx-auto leading-relaxed text-xl">
     At Seaside Plumbing &amp; Mechanical, we're committed to offering fast, reliable, and high-quality plumbing services that exceed your expectations. Whether it's a minor fix or a major overhaul, our experts are here to get the job done with precision and care.
    </p>
   </section>
+
   <!-- Services Section -->
-  <section class="py-12 px-12 md:px-24 bg-[#020617]">
+  <section class="py-20 px-12 md:px-24 bg-[#020617]">
    <!-- Commercial Services -->
-   <div class="flex flex-col md:flex-row items-center mb-24">
-    <div class="md:w-1/2 mb-12 md:mb-0">
-     <img alt="Plumber in orange vest and blue shirt using a plunger on a toilet" class="rounded-2xl shadow-2xl" height="500" src="https://replicate.delivery/xezq/lQTAIOnIGAZnFlsZaoSLJsBfSu1XmxRAuILyJ2k1zO6PaTALA/out.png" width="600"/>
+   <div class="flex flex-col md:flex-row items-center mb-40">
+    <div class="md:w-1/2 mb-16 md:mb-0">
+     <!-- UPDATED: commercial image -->
+     <img alt="Commercial plumber at work" class="rounded-2xl shadow-2xl w-full max-w-lg mx-auto" src="assets/plumber-2.jpg"/>
     </div>
-    <div class="md:w-1/2 md:pl-20">
-     <h3 class="text-4xl font-bold mb-8">
-      Commercial Services
-     </h3>
-     <ul class="space-y-4 mb-10">
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       New Construction Plumbing
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Commercial Remodels &amp; Tenant
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Service &amp; Maintenance
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Water Heater Installation &amp; Replacement
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Sewer &amp; water line repair
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Repiping &amp; systems Upgrades
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Plumbing Inspections &amp; Diagnostics
-      </li>
+    <div class="md:w-1/2 md:pl-24">
+     <h3 class="text-4xl font-bold mb-8">Commercial Services</h3>
+     <ul class="space-y-4 mb-10 text-base text-gray-300">
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>New Construction Plumbing</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Commercial Remodels &amp; Tenant</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Service &amp; Maintenance</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Water Heater Installation &amp; Replacement</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Sewer &amp; water line repair</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Repiping &amp; systems Upgrades</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Plumbing Inspections &amp; Diagnostics</li>
      </ul>
-     <a class="bg-[#f59e0b] text-black font-bold py-3 px-8 rounded-lg inline-flex items-center hover:bg-orange-500 transition duration-300" href="#">
+     <a class="bg-[#f59e0b] text-black font-bold py-4 px-10 rounded-lg inline-flex items-center hover:bg-orange-500 transition duration-300" href="#">
       Get A Free Quote
-      <i class="fas fa-arrow-right ml-2">
-      </i>
+      <i class="fas fa-arrow-right ml-2"></i>
      </a>
     </div>
    </div>
+
    <!-- Residential Services -->
-   <div class="flex flex-col md:flex-row items-start">
-    <div class="md:w-1/2">
-     <h3 class="text-4xl font-bold mb-8">
-      Residential Services
-     </h3>
-     <ul class="space-y-4 mb-10">
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       General Plumbing Repairs
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Water Heaters (Tank &amp; Tankless)
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Leak Detection &amp; Repair
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Sump Pumps
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Toilet Repair &amp; Replacement
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Faucet &amp; Fixture Instillation
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Sewer Line Repairs
-      </li>
-      <li class="flex items-center">
-       <span class="w-2 h-2 bg-white rounded-full mr-3">
-       </span>
-       Garbage Disposal Installation &amp; Repair
-      </li>
+   <div class="flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 md:pr-24 order-2 md:order-1">
+     <h3 class="text-4xl font-bold mb-8">Residential Services</h3>
+     <ul class="space-y-4 mb-10 text-base text-gray-300">
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>General Plumbing Repairs</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Water Heaters (Tank &amp; Tankless)</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Leak Detection &amp; Repair</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Sump Pumps</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Toilet Repair &amp; Replacement</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Faucet &amp; Fixture Instillation</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Sewer Line Repairs</li>
+      <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-4 flex-shrink-0"></span>Garbage Disposal Installation &amp; Repair</li>
      </ul>
-     <a class="bg-[#f59e0b] text-black font-bold py-3 px-8 rounded-lg inline-flex items-center hover:bg-orange-500 transition duration-300" href="#">
+     <a class="bg-[#f59e0b] text-black font-bold py-4 px-10 rounded-lg inline-flex items-center hover:bg-orange-500 transition duration-300" href="#">
       Get A Free Quote
-      <i class="fas fa-arrow-right ml-2">
-      </i>
+      <i class="fas fa-arrow-right ml-2"></i>
      </a>
     </div>
-    <div class="md:w-1/2">
+
+    <!-- NOTE: This residential image is still an external placeholder.
+         If you want, tell me which one of your assets (plumber-4.jpg ... plumber-9.jpg) should go here and I'll swap it. -->
+    <div class="md:w-1/2 order-1 md:order-2 mb-16 md:mb-0">
+     <img alt="Modern bathroom faucet installation being completed by a professional" class="rounded-2xl shadow-2xl w-full max-w-lg mx-auto" src="https://replicate.delivery/xezq/hTQg8rTDaWovJBoDr7KFyPXzzMJj3Hpetw2YUnH9y9DIkTALA/out.png"/>
     </div>
    </div>
   </section>
+
   <!-- Branding Section -->
-  <section class="py-24 px-12 text-center bg-[#020617]">
-   <h2 class="text-5xl font-extrabold mb-8">
+  <section class="py-32 px-12 text-center bg-[#020617]">
+   <h2 class="text-6xl font-extrabold mb-10">
     Seaside Plumbing &amp; Mechanical
    </h2>
-   <p class="text-gray-300 max-w-6xl mx-auto leading-relaxed text-lg font-semibold mb-4">
+   <p class="text-gray-300 max-w-6xl mx-auto leading-relaxed text-xl font-bold mb-6">
     Seaside Plumbing is a local company that treats your home like our own.
    </p>
-   <p class="text-gray-300 max-w-6xl mx-auto leading-relaxed text-lg">
+   <p class="text-gray-300 max-w-6xl mx-auto leading-relaxed text-xl">
     We take pride in honest work, fair prices, and fixing problems the right way—not the quick way. When you call us, you're getting a plumber you can trust.
    </p>
   </section>
+
   <!-- CTA Banner Section -->
-  <section class="px-12 md:px-24 py-12">
-   <div class="bg-[#0f172a] rounded-3xl overflow-hidden flex flex-col md:flex-row items-center relative">
-    <div class="p-12 md:p-20 md:w-2/3">
-     <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
-      Seaside Plumbing &amp; Mechanical
+  <section id="contact" class="px-12 md:px-24 py-16">
+   <div class="bg-[#0f172a] rounded-[40px] overflow-hidden flex flex-col md:flex-row items-center relative min-h-[500px]">
+    <div class="p-16 md:p-24 md:w-2/3 z-10">
+     <h2 class="text-5xl md:text-6xl font-extrabold mb-8 leading-tight">
+      Seaside Plumbing &amp;
+      <br/>
+      Mechanical
      </h2>
-     <p class="text-gray-300 text-lg mb-10 max-w-xl">
+     <p class="text-gray-300 text-xl mb-12 max-w-xl leading-relaxed">
       Whether it's an emergency or routine maintenance, our expert team is here to help. Contact us now for fast, reliable, and affordable plumbing services.
      </p>
-     <a class="bg-[#f59e0b] text-black font-bold py-4 px-8 rounded-lg inline-flex items-center hover:bg-orange-500 transition duration-300" href="#">
+     <a class="bg-[#f59e0b] text-black font-bold py-5 px-12 rounded-xl inline-flex items-center hover:bg-orange-500 transition duration-300 text-lg" href="#">
       Get A Quote Today
-      <i class="fas fa-arrow-right ml-2">
-      </i>
+      <i class="fas fa-arrow-right ml-2"></i>
      </a>
     </div>
-    <div class="md:w-1/3 flex justify-end items-end h-full">
-     <img alt="A confident plumber in a blue uniform and cap with a tool belt around his waist" class="h-full object-contain" src="https://placehold.co/400x600?text=Confident+Plumber"/>
+    <div class="md:w-1/3 flex justify-end items-end h-full absolute right-0 bottom-0">
+     <!-- UPDATED: CTA plumber image -->
+     <img alt="A confident professional plumber in a blue uniform and cap with a tool belt, smiling" class="h-[600px] object-contain" src="assets/plumber-3.jpg"/>
     </div>
    </div>
   </section>
+
   <!-- Testimonials Heading Section -->
-  <section class="py-24 px-12 text-center bg-[#020617]">
-   <h2 class="text-4xl md:text-5xl font-extrabold max-w-5xl mx-auto leading-tight">
+  <section class="py-32 px-12 text-center bg-[#020617]">
+   <h2 class="text-5xl md:text-6xl font-extrabold max-w-6xl mx-auto leading-[1.2]">
     Hear How Seaside Plumbing &amp; Mechanical Helped Others Conquer Plumbing Challenges
    </h2>
   </section>
+
   <!-- Footer -->
-  <footer class="py-16 px-12 bg-[#020617] border-t border-gray-800 flex flex-col items-center">
-   <img alt="Seaside Plumbing &amp; Mechanical Logo" class="h-24 mb-8" height="150" src="https://replicate.delivery/xezq/MlSZbaIruhrtO52fshJpLK9yplCCd5XOrMh9o21RhcXMaTALA/out.png" width="150"/>
-   <div class="text-center text-gray-400 text-sm space-y-2">
-    <p>
-     © 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.
-    </p>
-    <p>
-     Seaside Plumbing &amp; Mechanical | 960-760-1009 | jonathanb@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)
+  <footer class="py-20 px-12 bg-[#020617] border-t border-gray-900 flex flex-col items-center">
+   <!-- UPDATED: Footer Logo -->
+   <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-32 mb-10" src="assets/logo.png"/>
+   <div class="text-center text-gray-500 text-sm space-y-3 max-w-4xl">
+    <p>© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</p>
+    <p class="leading-relaxed">
+     Seaside Plumbing &amp; Mechanical | 960-760-1009 | seasideplumbingco.com | Hours: 24/7 (perform emergency calls)
     </p>
    </div>
   </footer>
