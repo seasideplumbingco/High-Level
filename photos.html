@@ -1,66 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">
-      <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-      <div>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Project Photos - Seaside Plumbing &amp; Mechanical
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: white;
+            scroll-behavior: smooth;
+        }
+  </style>
+ </head>
+ <body class="antialiased">
+  <!-- Navigation -->
+  <nav class="relative z-50 flex items-center justify-between px-12 py-4 bg-[#020617]">
+   <div class="flex items-center">
+    <a class="inline-flex items-center" href="index.html">
+     <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-32 w-auto" src="assets/logo.png"/>
     </a>
-
-    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
-
-  <nav id="nav" class="nav" aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="service-areas.html">Service Areas</a>
-  <a href="faq.html">FAQ</a>
-  <a href="photos.html">Photos</a>
-  <a href="about.html">About Us</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-  </div>
-</header>
-
-<main id="main">
-  <section class="section">
-    <div class="container">
-      <h1 class="section-title">Project Photos</h1>
-      <p class="section-sub">Before/after shots, installs, repairs, and recent work.</p>
-
-      <div class="photo-grid">
-        <img src="assets/plumber-8.jpg" alt="Work photo 1">
-        <img src="assets/plumber-8.jpg" alt="Work photo 2">
-        <img src="assets/plumber-8.jpg" alt="Work photo 3">
-        <img src="assets/plumber-8.jpg" alt="Work photo 4">
-        <img src="assets/plumber-8.jpg" alt="Work photo 5">
-        <img src="assets/plumber-8.jpg" alt="Work photo 6">
-      </div>
-
-      <div class="cta-row" style="margin-top:30px;">
-        <a class="btn btn-primary" href="contact.html">Request Service →</a>
-      </div>
+   </div>
+   <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
+    <a class="hover:text-orange-400 transition-colors" href="index.html">
+     Home
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="services.html">
+     Services
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="service-areas.html">
+     Service Area
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="about.html">
+     About Us
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="photos.html">
+     Photos
+    </a>
+    <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
+     <i class="far fa-question-circle mr-2">
+     </i>
+     FAQs
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="contact.html">
+     Contact Us
+    </a>
+   </div>
+  </nav>
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-8 py-16 text-center">
+   <h1 class="text-5xl font-bold mb-4">
+    Project Photos
+   </h1>
+   <p class="text-gray-400 text-lg mb-16">
+    Before/after shots, installs, repairs, and recent work.
+   </p>
+   <!-- Image Gallery Grid -->
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+    <!-- Image 1 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+     <img alt="A professional plumber in a blue uniform kneeling and working on the plumbing under a modern kitchen sink with a brick wall background and a water heater visible" class="w-full h-full object-cover" height="600" src="assets/plumber-8.jpg"/>
     </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-    <div>© 2026 Seaside Plumbing & Mechanical — All rights reserved.</div>
-    <div class="fine">
-      Seaside Plumbing & Mechanical | 960-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (emergency calls)
+    <!-- Image 2 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+     <img alt="A professional plumber in a blue uniform kneeling and working on the plumbing under a modern kitchen sink with a brick wall background and a water heater visible" class="w-full h-full object-cover" height="600" src="assets/plumber-8.jpg"/>
     </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <!-- Image 3 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+     <img alt="A professional plumber in a blue uniform kneeling and working on the plumbing under a modern kitchen sink with a brick wall background and a water heater visible" class="w-full h-full object-cover" height="600" src="assets/plumber-8.jpg/>
+    </div>
+    <!-- Image 4 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+     <img alt="A professional plumber in a blue uniform kneeling and working on the plumbing under a modern kitchen sink with a brick wall background and a water heater visible" class="w-full h-full object-cover" height="600" src="assets/plumber-8.jpg"/>
+    </div>
+    <!-- Image 5 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+     <img alt="A professional plumber in a blue uniform kneeling and working on the plumbing under a modern kitchen sink with a brick wall background and a water heater visible" class="w-full h-full object-cover" height="600" src="assets/plumber-8.jpg" width="600"/>
+    </div>
+    <!-- Image 6 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+     <img alt="A professional plumber in a blue uniform kneeling and working on the plumbing under a modern kitchen sink with a brick wall background and a water heater visible" class="w-full h-full object-cover" height="600" src="assets/plumber-8.jpg" width="600"/>
+    </div>
+     <!-- Image 7 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+     <img alt="A professional plumber in a blue uniform kneeling and working on the plumbing under a modern kitchen sink with a brick wall background and a water heater visible" class="w-full h-full object-cover" height="600" src="assets/plumber-8.jpg" width="600"/>
+    </div>
+   </div>
+    <!-- Image 8 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+     <img alt="A professional plumber in a blue uniform kneeling and working on the plumbing under a modern kitchen sink with a brick wall background and a water heater visible" class="w-full h-full object-cover" height="600" src="assets/plumber-8.jpg" width="600"/>
+    </div>
+   </div>
+   <!-- CTA Button -->
+   <div class="flex justify-center mb-24">
+    <a class="bg-[#ffb82b] text-black font-bold py-3 px-8 rounded-lg flex items-center hover:bg-[#e5a527] transition duration-300" href="#">
+     Request Service
+     <span class="ml-2">
+      →
+     </span>
+    </a>
+   </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-[#020617] py-20 border-t border-gray-900">
+   <div class="max-w-7xl mx-auto px-8 flex flex-col items-center">
+    <img alt="Seaside Plumbing &amp; Mechanical Logo" class="h-28 mb-10" src="assets/logo.png"/>
+    <div class="text-center text-[11px] text-gray-400 space-y-3 tracking-wider">
+     <p>
+      © 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.
+     </p>
+     <p>
+      Seaside Plumbing &amp; Mechanical | 960-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)
+     </p>
+    </div>
+   </div>
+  </footer>
+ </body>
 </html>
