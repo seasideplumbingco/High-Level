@@ -1,162 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seaside Plumbing & Mechanical | Home</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seaside Plumbing & Mechanical</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Seaside Plumbing & Mechanical Home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
+        <span class="brand-text">
+          <span class="brand-name">Seaside Plumbing<br>&amp; Mechanical</span>
+          <span class="brand-sub">Residential &amp; Commercial</span>
+        </span>
+      </a>
+
+      <button class="menu-btn" type="button">Menu</button>
+
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="faq.html">FAQ</a>
+        <a href="photos.html">Photos</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Transform Your Home <span>with Our Expert Plumbing Solutions</span></h1>
+        <p>
+          Get reliable, top-quality plumbing services—from repairs to installations.
+          Clear communication, dependable service, and workmanship you can trust.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="contact.html">Schedule a Estimate Today →</a>
+          <a class="btn btn-secondary" href="services.html">View Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">The Plumbing Difference You’ve Been Looking For…</h2>
+        <p class="section-sub">Honest recommendations, clean work, and a team that treats your home or facility with respect.</p>
+
+        <div class="split">
+          <div class="card pad">
+            <h3 class="h2">Quality work. No pressure.</h3>
+            <p class="p">
+              We show up when we say we will, explain the issue in plain language, and give honest recommendations
+              before any work begins—no shortcuts and no unnecessary upsells.
+            </p>
+            <div class="cta-row" style="justify-content:flex-start;">
+              <a class="btn btn-primary" href="contact.html">Request Service →</a>
+              <a class="btn btn-secondary" href="service-areas.html">Service Areas →</a>
+            </div>
+          </div>
+
+          <div class="media">
+            <img src="assets/plumber-1.jpg" alt="Plumber working">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
       <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-      <div>
-        <div class="brand-name">Seaside Plumbing<br>& Mechanical</div>
-        <div class="brand-sub">Residential & Commercial</div>
-      </div>
-    </a>
-
-    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
-
- <nav id="nav" class="nav" aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="service-areas.html">Service Areas</a>
-  <a href="faq.html">FAQ</a>
-  <a href="photos.html">Photos</a>
-  <a href="about.html">About Us</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-  </div>
-</header>
-
-<main id="main">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <h1>Transform Your Home <span>with Our Expert Plumbing Solutions</span></h1>
-      <p>
-        Get reliable, top-quality plumbing services that address all your needs—from repairs to installations.
-        We bring years of experience and trusted solutions that ensure your home runs smoothly.
-      </p>
-
-      <div class="cta-row">
-      <a class="btn btn-primary" href="contact.html">
-  Schedule a Estimate Today →
-</a>
+      <div class="footer-line">© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</div>
+      <div class="footer-sub">Seaside Plumbing &amp; Mechanical | 960-760-1009 | jonathanb@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)</div>
     </div>
-  </section>
+  </footer>
 
-  <!-- “Difference” section like your screenshot -->
-  <section class="section">
-    <div class="container grid-2">
-      <div>
-        <h2 class="h2">The Plumbing Difference<br/>You’ve Been Looking For...</h2>
-        <p class="p">
-          Tired of dealing with plumbing problems that never seem to go away? We provide reliable,
-          high-quality plumbing services that ensure lasting solutions.
-        </p>
-        <p class="p">
-          Our expert team addresses your needs efficiently and with precision, so you can enjoy peace of mind.
-        </p>
-        <div class="cta-row" style="justify-content:flex-start;">
-          <a class="btn btn-primary" href="contact.html">Call Now →</a>
-        </div>
-      </div>
-
-      <div class="media">
-        <img src="assets/plumber-1.jpg" alt="Plumber working on pipes">
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick services preview -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">What We’ll Provide...</h2>
-      <p class="section-sub">
-        At Seaside Plumbing & Mechanical, we’re committed to offering fast, reliable, and high-quality plumbing services
-        that exceed your expectations.
-      </p>
-
-      <div class="services-split">
-        <div class="card pad service-block">
-          <h3 class="title">Commercial Services</h3>
-          <ul class="bullets">
-            <li><span class="dot"></span>New Construction Plumbing</li>
-            <li><span class="dot"></span>Commercial Remodels & Tenant</li>
-            <li><span class="dot"></span>Service & Maintenance</li>
-            <li><span class="dot"></span>Water Heater Installation & Replacement</li>
-            <li><span class="dot"></span>Sewer & water line repair</li>
-            <li><span class="dot"></span>Repiping & systems upgrades</li>
-            <li><span class="dot"></span>Plumbing inspections & diagnostics</li>
-          </ul>
-          <a class="btn btn-primary" href="contact.html">Get A Free Quote →</a>
-        </div>
-
-        <div class="card pad service-block">
-          <h3 class="title">Residential Services</h3>
-          <ul class="bullets">
-            <li><span class="dot"></span>General Plumbing Repairs</li>
-            <li><span class="dot"></span>Water Heaters (Tank & Tankless)</li>
-            <li><span class="dot"></span>Leak Detection & Repair</li>
-            <li><span class="dot"></span>Sump Pumps</li>
-            <li><span class="dot"></span>Toilet Repair & Replacement</li>
-            <li><span class="dot"></span>Faucet & Fixture Installation</li>
-            <li><span class="dot"></span>Sewer Line Repairs</li>
-            <li><span class="dot"></span>Garbage Disposal Installation & Repair</li>
-          </ul>
-          <a class="btn btn-primary" href="contact.html">Get A Free Quote →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reviews section (embed your widget here) -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Hear How Seaside Plumbing & Mechanical Helped Others</h2>
-      <p class="section-sub">Conquer Plumbing Challenges</p>
-
-      <div class="card pad" style="margin-top:28px;">
-        <!-- Replace this with your review widget embed code -->
-        <div style="text-align:center;">
-  <p class="p" style="margin-bottom:16px;">
-    See what our customers are saying about Seaside Plumbing & Mechanical.
-  </p>
-
-  <a
-    href="https://www.yelp.com/biz/seaside-plumbing-and-mechanical-wilmington?osq=Seaside+Plumbing+%26+Mechanical"
-    target="_blank"
-    rel="noopener"
-    class="btn btn-primary"
-  >
-    Read Our Yelp Reviews →
-  </a>
-</div>
-
-        </p>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-    <div>© 2026 Seaside Plumbing & Mechanical — All rights reserved.</div>
-    <div class="fine">
-      Seaside Plumbing & Mechanical | 960-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (emergency calls)
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
