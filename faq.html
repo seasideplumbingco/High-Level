@@ -3,165 +3,165 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Seaside Plumbing &amp; Mechanical - FAQs
+   FAQs - Seaside Plumbing &amp; Mechanical
   </title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
   <style>
    body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: #020617;
+            color: white;
+            scroll-behavior: smooth;
         }
-
-        .bg-hero {
-            background-image: linear-gradient(rgba(2, 6, 23, 0.80), rgba(2, 6, 23, 0.80)), url('assets/hero-under-sink.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .dot-grid {
-            background-image: radial-gradient(circle, #ffffff33 1px, transparent 1px);
+        .dot-pattern {
+            background-image: radial-gradient(circle, #334155 1.5px, transparent 1.5px);
             background-size: 20px 20px;
         }
   </style>
  </head>
-
- <body class="text-white">
-
-  <!-- Navigation (MATCHES your correct template) -->
+ <body class="antialiased min-h-screen flex flex-col">
+  <!-- Navigation -->
   <nav class="flex items-center justify-between px-12 py-4 bg-[#020617]">
    <div class="flex items-center">
+    <!-- Logo Image -->
     <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-32" src="assets/logo.png"/>
    </div>
    <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
-    <a class="hover:text-orange-400 transition-colors" href="index.html">Home</a>
-    <a class="hover:text-orange-400 transition-colors" href="services.html">Services</a>
-    <a class="hover:text-orange-400 transition-colors" href="service-areas.html">Service Area</a>
-    <a class="hover:text-orange-400 transition-colors" href="about.html">About Us</a>
-    <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
-     <i class="far fa-question-circle mr-2"></i>
+    <a class="hover:text-orange-400 transition-colors" href="#">
+     Home
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="#">
+     Services
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="#">
+     Service Area
+    </a>
+    <a class="hover:text-orange-400 transition-colors" href="#">
+     About Us
+    </a>
+    <a class="hover:text-orange-400 transition-colors flex items-center" href="#">
+     <i class="far fa-question-circle mr-2">
+     </i>
      FAQs
     </a>
-    <a class="hover:text-orange-400 transition-colors" href="contact.html">Contact Us</a>
+    <a class="hover:text-orange-400 transition-colors" href="#">
+     Contact Us
+    </a>
    </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-hero relative h-[400px] flex items-center justify-center overflow-hidden">
-   <div class="relative z-10 text-center">
-    <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
-     FAQs
-    </h1>
+  <header class="relative py-24 flex justify-center items-center overflow-hidden">
+   <h1 class="text-6xl md:text-7xl font-extrabold tracking-tight z-10 text-center">
+    FAQs
+   </h1>
+   <!-- Dot Pattern Decoration -->
+   <div class="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 dot-pattern opacity-30 pointer-events-none">
    </div>
-   <div class="absolute right-10 bottom-10 w-48 h-48 dot-grid opacity-30 hidden md:block"></div>
-  </section>
+  </header>
 
-<!-- Main Content Section -->
-<main class="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-  <!-- Right Column: FAQs -->
-  <div>
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Frequently Asked Questions</h2>
-    <p class="text-gray-300 text-lg mb-10">
-      Answers to common questions about our plumbing services.
+  <!-- Main Content -->
+  <main class="flex-grow max-w-7xl mx-auto px-8 pb-24 w-full">
+   <div class="max-w-3xl mx-auto">
+    <h2 class="text-4xl font-bold mb-4 text-center">
+     Frequently Asked Questions
+    </h2>
+    <p class="text-gray-400 mb-12 text-lg text-center">
+     Answers to common questions about our plumbing services.
     </p>
-
     <div class="space-y-4">
-
-      <details class="group rounded-2xl border border-slate-800 bg-[#0f172a] p-6">
-        <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold">
-          <span>What areas do you serve?</span>
-          <i class="fas fa-chevron-down text-sm text-gray-300 transition-transform duration-200 group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-4 text-gray-300 leading-relaxed">
-          We serve coastal North Carolina and surrounding areas. Visit our Service Areas page for details.
-        </div>
-      </details>
-
-      <details class="group rounded-2xl border border-slate-800 bg-[#0f172a] p-6">
-        <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold">
-          <span>Do you handle commercial new construction projects?</span>
-          <i class="fas fa-chevron-down text-sm text-gray-300 transition-transform duration-200 group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-4 text-gray-300 leading-relaxed">
-          Yes. We support commercial new construction and facility plumbing needs. Contact us with project details.
-        </div>
-      </details>
-
-      <details class="group rounded-2xl border border-slate-800 bg-[#0f172a] p-6">
-        <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold">
-          <span>Do you offer residential plumbing services?</span>
-          <i class="fas fa-chevron-down text-sm text-gray-300 transition-transform duration-200 group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-4 text-gray-300 leading-relaxed">
-          Yes. We provide repairs, replacements, installations, and maintenance for residential plumbing systems.
-        </div>
-      </details>
-
-      <details class="group rounded-2xl border border-slate-800 bg-[#0f172a] p-6">
-        <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold">
-          <span>Are you licensed and insured?</span>
-          <i class="fas fa-chevron-down text-sm text-gray-300 transition-transform duration-200 group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-4 text-gray-300 leading-relaxed">
-          Yes. We operate under a properly licensed business and carry insurance for covered work.
-        </div>
-      </details>
-
-      <details class="group rounded-2xl border border-slate-800 bg-[#0f172a] p-6">
-        <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold">
-          <span>How do I request a commercial bid or residential quote?</span>
-          <i class="fas fa-chevron-down text-sm text-gray-300 transition-transform duration-200 group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-4 text-gray-300 leading-relaxed">
-          Use our contact form or call us with your scope, location, and timeline. We’ll follow up during business hours.
-        </div>
-      </details>
-
-      <details class="group rounded-2xl border border-slate-800 bg-[#0f172a] p-6">
-        <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold">
-          <span>Do you provide emergency plumbing services?</span>
-          <i class="fas fa-chevron-down text-sm text-gray-300 transition-transform duration-200 group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-4 text-gray-300 leading-relaxed">
-          Please contact us as soon as possible and we’ll do our best to assist based on availability.
-        </div>
-      </details>
-
-      <details class="group rounded-2xl border border-slate-800 bg-[#0f172a] p-6">
-        <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold">
-          <span>Do you offer free estimates?</span>
-          <i class="fas fa-chevron-down text-sm text-gray-300 transition-transform duration-200 group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-4 text-gray-300 leading-relaxed">
-          Yes. We provide free estimates for many projects. Share details and we’ll advise next steps.
-        </div>
-      </details>
-
+     <!-- FAQ Item 1 -->
+     <div class="bg-[#0f172a] rounded-lg overflow-hidden border border-slate-800">
+      <button class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-slate-800 transition-colors">
+       <span class="font-semibold text-lg">
+        What areas do you serve?
+       </span>
+       <i class="fas fa-chevron-down text-gray-500 text-sm">
+       </i>
+      </button>
+     </div>
+     <!-- FAQ Item 2 -->
+     <div class="bg-[#0f172a] rounded-lg overflow-hidden border border-slate-800">
+      <button class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-slate-800 transition-colors">
+       <span class="font-semibold text-lg">
+        Do you handle commercial new construction projects?
+       </span>
+       <i class="fas fa-chevron-down text-gray-500 text-sm">
+       </i>
+      </button>
+     </div>
+     <!-- FAQ Item 3 -->
+     <div class="bg-[#0f172a] rounded-lg overflow-hidden border border-slate-800">
+      <button class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-slate-800 transition-colors">
+       <span class="font-semibold text-lg">
+        Do you offer residential plumbing services?
+       </span>
+       <i class="fas fa-chevron-down text-gray-500 text-sm">
+       </i>
+      </button>
+     </div>
+     <!-- FAQ Item 4 -->
+     <div class="bg-[#0f172a] rounded-lg overflow-hidden border border-slate-800">
+      <button class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-slate-800 transition-colors">
+       <span class="font-semibold text-lg">
+        Are you licensed and insured?
+       </span>
+       <i class="fas fa-chevron-down text-gray-500 text-sm">
+       </i>
+      </button>
+     </div>
+     <!-- FAQ Item 5 -->
+     <div class="bg-[#0f172a] rounded-lg overflow-hidden border border-slate-800">
+      <button class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-slate-800 transition-colors">
+       <span class="font-semibold text-lg">
+        How do I request a commercial bid or residential quote?
+       </span>
+       <i class="fas fa-chevron-down text-gray-500 text-sm">
+       </i>
+      </button>
+     </div>
+     <!-- FAQ Item 6 -->
+     <div class="bg-[#0f172a] rounded-lg overflow-hidden border border-slate-800">
+      <button class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-slate-800 transition-colors">
+       <span class="font-semibold text-lg">
+        Do you provide emergency plumbing services?
+       </span>
+       <i class="fas fa-chevron-down text-gray-500 text-sm">
+       </i>
+      </button>
+     </div>
+     <!-- FAQ Item 7 -->
+     <div class="bg-[#0f172a] rounded-lg overflow-hidden border border-slate-800">
+      <button class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-slate-800 transition-colors">
+       <span class="font-semibold text-lg">
+        Do you offer free estimates?
+       </span>
+       <i class="fas fa-chevron-down text-gray-500 text-sm">
+       </i>
+      </button>
+     </div>
     </div>
-  </div>
-</main>
+   </div>
+  </main>
 
-  <!-- Footer (MATCHES your correct template) -->
-  <footer class="bg-[#020617] py-16 border-t border-gray-800">
-   <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
-    <img alt="Seaside Plumbing &amp; Mechanical Logo" class="h-32 w-auto mb-8" src="assets/logo.png" width="150" height="150"/>
-    <div class="text-gray-400 text-sm space-y-2">
-     <p>
-      © 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.
-     </p>
-     <p class="flex flex-wrap justify-center gap-x-2">
-      <span>Seaside Plumbing &amp; Mechanical</span>
-      <span class="hidden md:inline">|</span>
-      <span>960-760-1009</span>
-      <span class="hidden md:inline">|</span>
-      <span>info@seasideplumbingco.com</span>
-      <span class="hidden md:inline">|</span>
-      <span>Hours: 24/7 (perform emergency calls)</span>
-     </p>
-    </div>
+  <!-- Footer -->
+  <footer class="py-12 border-t border-slate-900 flex flex-col items-center text-center">
+   <div class="mb-8">
+    <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-20 mx-auto" height="100" src="assets/logo.png">
+   </div>
+   <div class="text-gray-500 text-xs space-y-2 px-4">
+    <p>
+     © 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.
+    </p>
+    <p>
+     Seaside Plumbing &amp; Mechanical | 960-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)
+    </p>
    </div>
   </footer>
-
  </body>
 </html>
