@@ -1,107 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services | Seaside Plumbing & Mechanical</title>
+
+  <!-- IMPORTANT: make sure this matches your file name -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-        <span class="brand-text">
-          <span class="brand-name">Seaside Plumbing<br>&amp; Mechanical</span>
-          <span class="brand-sub">Residential &amp; Commercial</span>
-        </span>
+      <a class="brand" href="index.html" aria-label="Seaside Plumbing & Mechanical home">
+        <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo" />
       </a>
 
-      <button class="menu-btn" type="button">Menu</button>
-
-      <nav class="nav">
+      <nav class="nav" id="siteNav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a class="active" href="services.html">Services</a>
-        <a href="service-areas.html">Service Areas</a>
-        <a href="faq.html">FAQ</a>
-        <a href="photos.html">Photos</a>
         <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact Us</a>
       </nav>
+
+      <button class="menu-btn" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false"
+        onclick="document.getElementById('siteNav').classList.toggle('open'); this.setAttribute('aria-expanded', document.getElementById('siteNav').classList.contains('open'));">
+        Menu
+      </button>
     </div>
   </header>
 
-  <main id="main" class="services-page">
-    <div class="container">
-      <h1 class="section-title">What We’ll Provide…</h1>
-      <p class="section-sub">
-        Residential and commercial plumbing services with clear communication and dependable workmanship.
-      </p>
+  <main id="main">
+    <!-- HERO STRIP -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our Services</h1>
+      </div>
+    </section>
 
-      <!-- COMMERCIAL -->
-      <section class="services-block" style="margin-top:48px;">
-        <div class="services-img">
-          <img src="assets/plumber-5.jpg" alt="Commercial plumbing work">
-        </div>
+    <!-- CENTERED SERVICES PANEL -->
+    <section class="services-panel">
+      <div class="container">
+        <div class="panel services-card-center">
+          <div class="services-layout services-layout-center">
+            <!-- left image -->
+            <div class="services-image services-image-fixed">
+              <img src="assets/plumber-1.jpg" alt="Plumbing service work" />
+            </div>
 
-        <div>
-          <h2 class="svc-title">Commercial Services</h2>
-          <ul class="svc-list">
-            <li>New Construction Plumbing</li>
-            <li>Commercial Remodels &amp; Tenant Improvements</li>
-            <li>Service &amp; Maintenance</li>
-            <li>Water Heater Installation &amp; Replacement</li>
-            <li>Sewer &amp; Water Line Repair</li>
-            <li>Repiping &amp; System Upgrades</li>
-            <li>Plumbing Inspections &amp; Diagnostics</li>
-          </ul>
+            <!-- right list -->
+            <div class="services-groups">
+              <div class="svc-group">
+                <h3 class="group-title">Commercial Plumbing</h3>
+                <ul class="checklist">
+                  <li><span class="check">✓</span> Commercial system installation and upgrades</li>
+                  <li><span class="check">✓</span> Commercial drain and sewer cleaning</li>
+                  <li><span class="check">✓</span> Backflow prevention and testing</li>
+                  <li><span class="check">✓</span> Gas line services for commercial properties</li>
+                  <li><span class="check">✓</span> Emergency commercial repairs</li>
+                </ul>
+              </div>
 
-          <div class="svc-cta">
-            <a class="btn btn-primary" href="contact.html">Get A Free Quote →</a>
+              <div class="svc-group">
+                <h3 class="group-title">Residential Plumbing</h3>
+                <ul class="checklist">
+                  <li><span class="check">✓</span> Home plumbing installation and replacement</li>
+                  <li><span class="check">✓</span> Kitchen and bathroom repairs</li>
+                  <li><span class="check">✓</span> Water heater repair and installation</li>
+                  <li><span class="check">✓</span> Leak detection and pipe repair</li>
+                  <li><span class="check">✓</span> Drain cleaning and unclogging</li>
+                </ul>
+              </div>
+
+              <div class="svc-group">
+                <h3 class="group-title">Additional Services</h3>
+                <ul class="checklist">
+                  <li><span class="check">✓</span> Preventive maintenance programs</li>
+                  <li><span class="check">✓</span> Pipe inspections and camera diagnostics</li>
+                  <li><span class="check">✓</span> Sump pump service and installation</li>
+                  <li><span class="check">✓</span> Fixture upgrades and replacements</li>
+                </ul>
+              </div>
+
+              <div class="services-note">
+                <h2>Additional Services</h2>
+                <p>We follow established safety protocols and comply with applicable codes.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!-- RESIDENTIAL -->
-      <section class="services-block">
-        <div>
-          <h2 class="svc-title">Residential Services</h2>
-          <ul class="svc-list">
-            <li>General Plumbing Repairs</li>
-            <li>Water Heaters (Tank &amp; Tankless)</li>
-            <li>Leak Detection &amp; Repair</li>
-            <li>Sump Pumps</li>
-            <li>Toilet Repair &amp; Replacement</li>
-            <li>Faucet &amp; Fixture Installation</li>
-            <li>Sewer Line Repairs</li>
-            <li>Garbage Disposal Installation &amp; Repair</li>
-          </ul>
-
-          <div class="svc-cta">
-            <a class="btn btn-primary" href="contact.html">Get A Free Quote →</a>
-          </div>
-        </div>
-
-        <div class="services-img">
-          <img src="assets/plumber-6.jpg" alt="Residential plumbing work">
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
+  <!-- FOOTER (matches your screenshot style) -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo">
-      <div class="footer-line">© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</div>
-      <div class="footer-sub">
-        Seaside Plumbing &amp; Mechanical | 960-760-1009 | info@seasideplumbingco.com |
-        Hours: 24/7 (perform emergency calls)
-      </div>
+      <img src="assets/logo.png" alt="Seaside Plumbing & Mechanical logo" />
+      <div class="fine">© 2026 Seaside Plumbing & Mechanical - All rights reserved.</div>
+      <div class="fine">Seaside Plumbing & Mechanical | 960-760-1009 | jonathanb@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)</div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
