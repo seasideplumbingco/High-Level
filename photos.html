@@ -1,9 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
 <html>
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Project Photos - Seaside Plumbing &amp; Mechanical
+   Seaside Plumbing &amp; Mechanical - Our Services
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
@@ -16,42 +18,55 @@
             color: white;
             scroll-behavior: smooth;
         }
+        .bg-hero {
+            background-image: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url("assets/residentialplumber.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .dot-pattern {
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px);
+            background-size: 20px 20px;
+        }
   </style>
- </head>
- <body class="antialiased">
-  <!-- Navigation -->
-  <nav class="relative z-50 flex items-center justify-between px-12 py-4 bg-[#020617]">
-   <div class="flex items-center">
-    <a class="inline-flex items-center" href="index.html">
-     <img alt="Seaside Plumbing &amp; Mechanical logo" class="h-32 w-auto" src="assets/logo.png"/>
-    </a>
+  </head>
+
+  <body class="text-white">
+    <!-- Navigation -->
+    <nav class="relative z-50 flex items-center justify-between px-12 py-4 bg-[#020617]">
+      <div class="flex items-center">
+        <a href="index.html" class="inline-flex items-center">
+          <img
+            src="assets/logo.png"
+            alt="Seaside Plumbing & Mechanical logo"
+            class="h-32 w-auto"
+          />
+        </a>
+      </div>
+
+      <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
+        <a class="hover:text-orange-400 transition-colors" href="index.html">Home</a>
+        <a class="hover:text-orange-400 transition-colors" href="services.html">Services</a>
+        <a class="hover:text-orange-400 transition-colors" href="service-areas.html">Service Area</a>
+        <a class="hover:text-orange-400 transition-colors" href="about.html">About Us</a>
+        <a class="hover:text-orange-400 transition-colors" href="photos.html">Photos</a>
+        <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
+          <i class="far fa-question-circle mr-2"></i>
+          FAQs
+        </a>
+        <a class="hover:text-orange-400 transition-colors" href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+
+<!-- Hero Section -->
+  <section class="relative h-[300px] flex items-center justify-center overflow-hidden">
+   <img alt="A professional plumber working on a large-scale commercial pipe system in a modern industrial facility, focusing on complex valve connections" class="absolute inset-0 w-full h-full object-cover opacity-40" height="300" src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&q=80&w=1920" width="1920"/>
+   <div class="absolute inset-0 bg-black/40">
    </div>
-   <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
-    <a class="hover:text-orange-400 transition-colors" href="index.html">
-     Home
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="services.html">
-     Services
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="service-areas.html">
-     Service Area
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="about.html">
-     About Us
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="photos.html">
-     Photos
-    </a>
-    <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
-     <i class="far fa-question-circle mr-2">
-     </i>
-     FAQs
-    </a>
-    <a class="hover:text-orange-400 transition-colors" href="contact.html">
-     Contact Us
-    </a>
-   </div>
-  </nav>
+   <h1 class="relative text-4xl font-bold z-10">
+    Project Photos
+   </h1>
+  </section>
+  <!-- Main Content -->
    <!-- Heading Section -->
    <section class="relative pt-8 pb-10 overflow-hidden">
     <div class="absolute top-0 right-0 w-1/3 h-48 dot-pattern opacity-20 pointer-events-none">
@@ -107,22 +122,22 @@
 
   <div class="w-full border-t border-gray-800 mt-16"></div>
 </div>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-[#020617] py-20 border-t border-gray-900">
-   <div class="max-w-7xl mx-auto px-8 flex flex-col items-center">
-    <img alt="Seaside Plumbing &amp; Mechanical Logo" class="h-28 mb-10" src="assets/logo.png"/>
-    <div class="text-center text-[11px] text-gray-400 space-y-3 tracking-wider">
-     <p>
-      © 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.
-     </p>
-     <p>
-      Seaside Plumbing &amp; Mechanical | 960-760-1009 | info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)
-     </p>
-    </div>
-   </div>
-  </footer>
- </body>
+    <!-- Footer -->
+    <footer class="bg-[#020617] py-14 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
+        <img
+          alt="Seaside Plumbing & Mechanical Logo"
+          class="h-20 md:h-24 mb-6"
+          src="assets/logo.png"
+        />
+        <div class="text-xs text-gray-400 space-y-2">
+          <p>© 2026 Seaside Plumbing &amp; Mechanical - All rights reserved.</p>
+          <p>
+            Seaside Plumbing &amp; Mechanical | 960-760-1009 |
+            info@seasideplumbingco.com | Hours: 24/7 (perform emergency calls)
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
