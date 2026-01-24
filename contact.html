@@ -121,16 +121,17 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <!-- REQUIRED dropdown with clear placeholder -->
     <select
-      name="request_type"
-      required
-      class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors text-white"
-    >
-      <option value="" disabled selected class="text-slate-400">
-        Choose Residential or Commercial (Required)
-      </option>
-      <option value="Residential">Residential</option>
-      <option value="Commercial">Commercial</option>
-    </select>
+  name="request_type"
+  required
+  class="w-full p-4 rounded border border-slate-700 bg-white text-black focus:outline-none focus:border-blue-500 transition-colors"
+>
+  <option value="" disabled selected>
+    Choose Residential or Commercial (Required)
+  </option>
+  <option value="Residential">Residential</option>
+  <option value="Commercial">Commercial</option>
+</select>
+
 
     <input
       class="w-full p-4 rounded border border-slate-700 focus:outline-none focus:border-blue-500 transition-colors"
