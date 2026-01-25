@@ -62,30 +62,48 @@
 <meta name="apple-mobile-web-app-title" content="Seaside Plumbing">
 
 <!-- Navigation -->
-<nav class="relative z-50 flex items-center justify-between px-12 py-4 bg-[#020617]">
-  <div class="flex items-center">
-    <a href="index.html" class="inline-flex items-center">
-      <img
-        src="assets/logo.png"
-        alt="Seaside Plumbing & Mechanical logo"
-        class="h-32 w-auto"
-      />
-    </a>
-  </div>
+<nav class="relative z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-[#020617]">
+  <!-- Logo -->
+  <a href="index.html" class="inline-flex items-center">
+    <img
+      src="assets/logo.png"
+      alt="Seaside Plumbing & Mechanical logo"
+      class="h-20 md:h-28 w-auto"
+    />
+  </a>
 
-  <div class="hidden md:flex space-x-12 text-[11px] font-medium uppercase tracking-widest">
+  <!-- Desktop Links -->
+  <div class="hidden md:flex space-x-10 text-[11px] font-medium uppercase tracking-widest">
     <a class="hover:text-orange-400 transition-colors" href="index.html">Home</a>
     <a class="hover:text-orange-400 transition-colors" href="services.html">Services</a>
     <a class="hover:text-orange-400 transition-colors" href="service-areas.html">Service Area</a>
     <a class="hover:text-orange-400 transition-colors" href="about.html">About Us</a>
     <a class="hover:text-orange-400 transition-colors" href="photos.html">Photos</a>
     <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
-      <i class="far fa-question-circle mr-2"></i>
-      FAQs
+      <i class="far fa-question-circle mr-2"></i> FAQs
     </a>
     <a class="hover:text-orange-400 transition-colors" href="contact.html">Contact Us</a>
   </div>
+
+  <!-- Mobile Menu Button -->
+  <button id="menuBtn" class="md:hidden text-white text-sm uppercase tracking-widest">
+    Menu
+  </button>
 </nav>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden bg-[#020617] border-t border-gray-800 md:hidden">
+  <div class="flex flex-col px-6 py-4 space-y-4 text-sm uppercase tracking-widest">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="service-areas.html">Service Area</a>
+    <a href="about.html">About Us</a>
+    <a href="photos.html">Photos</a>
+    <a href="faq.html">FAQs</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</div>
+
   <!-- Hero Section (TIGHTENED) -->
   <section class="bg-hero h-[650px] flex flex-col items-center justify-center text-center px-4">
    <h1 class="text-5xl md:text-7xl font-extrabold mb-6 max-w-5xl leading-[1.1]">
