@@ -507,3 +507,37 @@ header {
   z-index: 1000;
   background-color: #020617; /* your dark background */
 }
+
+/* ===============================
+   FORCE FULL PAGE HEIGHT / NO CLIPPING (PHOTO GRID FIX)
+=============================== */
+
+html, body {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* Common layout wrappers that often clip content */
+main,
+body > main,
+body > div,
+.section,
+.container,
+.page,
+.wrapper,
+#main,
+#content {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Photo grid safety override */
+#photo-grid {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  position: relative !important;
+}
