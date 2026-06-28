@@ -32,17 +32,17 @@
     />
   </a>
 
-  <!-- Desktop Links -->
+<!-- Desktop Links -->
   <div class="hidden md:flex space-x-10 text-[11px] font-medium uppercase tracking-widest">
-    <a class="hover:text-orange-400 transition-colors" href="index.html">Home</a>
-    <a class="hover:text-orange-400 transition-colors" href="services.html">Services</a>
-    <a class="hover:text-orange-400 transition-colors" href="service-areas.html">Service Areas</a>
-    <a class="hover:text-orange-400 transition-colors" href="about.html">About Us</a>
-    <a class="hover:text-orange-400 transition-colors" href="photos.html">Photos</a>
-    <a class="hover:text-orange-400 transition-colors flex items-center" href="faq.html">
+    <a class="hover:text-orange-400 transition-colors" href="home">Home</a>
+    <a class="hover:text-orange-400 transition-colors" href="services">Services</a>
+    <a class="hover:text-orange-400 transition-colors" href="service-areas">Service Areas</a>
+    <a class="hover:text-orange-400 transition-colors" href="about">About Us</a>
+    <a class="hover:text-orange-400 transition-colors" href="photos">Photos</a>
+    <a class="hover:text-orange-400 transition-colors flex items-center" href="faq">
       <i class="far fa-question-circle mr-2"></i> FAQs
     </a>
-    <a class="hover:text-orange-400 transition-colors" href="contact.html">Contact Us</a>
+    <a class="hover:text-orange-400 transition-colors" href="contact">Contact Us</a>
   </div>
 
   <!-- Mobile Menu Button -->
@@ -54,13 +54,13 @@
 <!-- Mobile Menu -->
 <div id="mobileMenu" class="hidden bg-[#020617] border-t border-gray-800 md:hidden">
   <div class="flex flex-col px-6 py-4 space-y-4 text-sm uppercase tracking-widest">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="service-areas.html">Service Areas</a>
-    <a href="about.html">About Us</a>
-    <a href="photos.html">Photos</a>
-    <a href="faq.html">FAQs</a>
-    <a href="contact.html">Contact Us</a>
+    <a href="home">Home</a>
+    <a href="services">Services</a>
+    <a href="service-areas">Service Areas</a>
+    <a href="about">About Us</a>
+    <a href="photos">Photos</a>
+    <a href="faq">FAQs</a>
+    <a href="contact">Contact Us</a>
   </div>
 </div>
 
